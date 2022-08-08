@@ -21,7 +21,11 @@
     <header class="encabezado">
       <img src="./img/logo.png" alt="Logo" class="logo" />
       <nav class="navbar">
+        <a href="javascript:abrirMenu()">
+          <i class="bi bi-caret-down-square-fill btn_menu"></i>
+        </a>
         <ul class="menu">
+          <a class="btn_cerrar_menu" href="javascript:cerrarMenu()"><i class="bi bi-x"></i></a>
           <li><a href="./index.html">Inicio</a></li>
           <li><a href="./pages/sobreNosotros.html">Sobre Nosotros</a></li>
           <li><a href="./pages/personajes.html">Personajes</a></li>
@@ -68,11 +72,11 @@
   <div class="background">
     <img id="background_2_index" src="./img/background/background_2_index.jpeg" alt="" />
     <section class="equipos_index">
-      <article class="titulo_equipos">
-        <h2>EQUIPOS PROFESIONALES</h2>
-        <hr />
+      <article class="titulo_equipos" data-aos="zoom-in-up">
+        <h2 class="titulo_principal">EQUIPOS PROFESIONALES</h2>
+        <hr class="divisor" />
       </article>
-      <article class="equipos">
+      <article class="equipos" data-aos="zoom-in-up">
         <article>
           <img src="./img/index/g2Esports.png" alt="logo g2 esports" />
           <h3>G2 Esports</h3>
@@ -151,8 +155,61 @@
 
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     AOS.init();
+
+    function abrirMenu() {
+      $('.navbar ul').css(
+        {
+          "display": "initial",
+          "position": "absolute",
+          "right": "0",
+          "top": "0",
+          "overflow": "hidden",
+          "background-color": "rgb(0, 0, 0)",
+          "width": "100%"
+        });
+
+        $('.btn_cerrar_menu').css(
+        {
+          "color": "rgb(255, 255, 255)"
+        });
+
+        $('.navbar ul li').css(
+        {
+          "margin": "0 0 0 0",
+          "margin": "5px 0 0 0",
+          "padding": "10px 0 10px 20px"
+        });
+      }
+
+        function cerrarMenu() {
+      $('.navbar ul').css(
+        {
+          "display": "none",
+          "position": "",
+          "right": "",
+          "top": "",
+          "overflow": "",
+          "background-color": "",
+          "width": ""
+        });
+
+        $('.btn_cerrar_menu').css(
+        {
+          "color": ""
+        });
+
+        $('.navbar ul li').css(
+        {
+          "margin": "",
+          "margin": "0 20px 0 0",
+          "padding": ""
+        });
+
+
+    }
   </script>
 </body>
 
