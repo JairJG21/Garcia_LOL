@@ -7,14 +7,14 @@
     padding: 0;
 }
 
+.background_blur {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .background_1_index {
     background-image: url(../img/background/background_1_index.jpg);
     background-position: 10% 5%;
     background-repeat: repeat;
-}
-
-.background_blur {
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .background_2_index {
@@ -23,24 +23,16 @@
     background-repeat: repeat;
 }
 
-#background_1_sobreNosotros {
-    width: 100%;
-    height: 111.1%;
-    position: absolute;
-    z-index: -1;
-    opacity: 0.7;
-    object-fit: cover;
-    object-position: 50% 100%;
+.background_1_sobreNosotros {
+    background-image: url(../img/background/background_1_sobreNosotros.jpg);
+    background-position: 60% 80%;
+    background-repeat: repeat;
 }
 
-#background_2_sobreNosotros {
-    width: 100%;
-    height: 172.5%;
-    position: absolute;
-    z-index: -1;
-    opacity: 0.7;
-    object-fit: cover;
-    object-position: 50% 100%;
+.background_2_sobreNosotros {
+    background-image: url(../img/background/background_2_sobreNosotros.jpg);
+    background-position: 50%;
+    background-repeat: repeat;
 }
 
 #background_1_personajes {
@@ -152,7 +144,7 @@
 }
 
 body#index ul.menu li:nth-child(2) a,
-body#sobreNosotros ul.menu li:nth-child(2) a,
+body#sobreNosotros ul.menu li:nth-child(3) a,
 body#personajes ul.menu li:nth-child(3) a,
 body#noticias ul.menu li:nth-child(4) a,
 body#soporte ul.menu li:nth-child(5) a {
@@ -409,6 +401,72 @@ body#soporte ul.menu li:nth-child(5) a {
     width: 120px;
 }
 
+.historia_desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.historia_desc p {
+    font-size: 15px;
+    text-align: center;
+    color: rgba(255, 255, 255);
+    margin: 10px 10px 20px 10px;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.historia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.valores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.valores h2 {
+    font-size: 13px;
+    color: rgb(255, 255 , 255);
+    font-family: 'Cinzel Decorative', cursive;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+.valores img {
+    margin: 15px 0 5px 0;
+}
+
+#valor_1 {
+    width: 40%;
+    border-radius: 100%;
+}
+
+#valor_2 {
+    width: 40%;
+    border-radius: 100%;
+}
+
+#valor_3 {
+    width: 40%;
+    border-radius: 100%;
+}
+
+#valor_4 {
+    width: 40%;
+    border-radius: 100%;
+}
+
+#valor_5 {
+    width: 40%;
+    border-radius: 100%;
+}
+
 /* Css Desktop */
 @media screen and (min-width: 1024px) {
 
@@ -418,109 +476,6 @@ body#soporte ul.menu li:nth-child(5) a {
 
     .btn_cerrar_menu {
         display: none;
-    }
-
-    .background {
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-    
-    #background_1_index {
-        width: 100%;
-        height: 153%;
-        position: absolute;
-        z-index: -1;
-        opacity: 0.7;
-        object-fit: cover;
-        object-position: 0% 100%;
-    }
-    
-    #background_2_index {
-        width: 100%;
-        height: 153%;
-        position: absolute;
-        z-index: -1;
-        opacity: 0.6;
-        object-fit: cover;
-    }
-    
-    #background_1_sobreNosotros {
-        width: 100%;
-        height: 111.1%;
-        position: absolute;
-        z-index: -1;
-        opacity: 0.7;
-        object-fit: cover;
-        object-position: 50% 100%;
-    }
-    
-    #background_2_sobreNosotros {
-        width: 100%;
-        height: 172.5%;
-        position: absolute;
-        z-index: -1;
-        opacity: 0.7;
-        object-fit: cover;
-        object-position: 50% 100%;
-    }
-    
-    #background_1_personajes {
-        width: 100%;
-        height: 87%;
-        position: absolute;
-        z-index: -1;
-        opacity: 0.7;
-        object-fit: cover;
-        object-position: 50% 100%;
-    }
-    
-    #background_2_personajes {
-        width: 100%;
-        height: 143%;
-        position: absolute;
-        z-index: -1;
-        opacity: 0.7;
-        object-fit: cover;
-        object-position: 50% 100%;
-    }
-    
-    #background_1_noticias {
-        width: 100%;
-        height: 73%;
-        position: absolute;
-        z-index: -1;
-        opacity: 0.7;
-        object-fit: cover;
-        object-position: 50% 20%;
-    }
-    
-    #background_2_noticias {
-        width: 100%;
-        height: 153%;
-        position: absolute;
-        z-index: -1;
-        opacity: 0.7;
-        object-fit: cover;
-        object-position: 50% 20%;
-    }
-    
-    #background_1_soporte {
-        width: 100%;
-        height: 67.2%;
-        position: absolute;
-        z-index: -1;
-        opacity: 0.7;
-        object-fit: cover;
-        object-position: 100% 40%;
-    }
-    
-    #background_2_soporte {
-        width: 100%;
-        height: 133.5%;
-        position: absolute;
-        z-index: -1;
-        opacity: 0.7;
-        object-fit: cover;
-        object-position: 100% 40%;
     }
     
     .encabezado {
@@ -555,27 +510,6 @@ body#soporte ul.menu li:nth-child(5) a {
         display: flex;
         list-style-type: none;
     }
-    
-    .navbar ul li {
-        margin: 0 20px 0 0;
-    }
-    
-    .navbar ul li a {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        font-size: 17px;
-        transition: all 0.2s linear;
-        font-family: 'Cinzel Decorative', cursive;
-    }
-    
-    body#index ul.menu li:nth-child(1) a,
-    body#sobreNosotros ul.menu li:nth-child(2) a,
-    body#personajes ul.menu li:nth-child(3) a,
-    body#noticias ul.menu li:nth-child(4) a,
-    body#soporte ul.menu li:nth-child(5) a {
-        border-bottom: 3px solid rgb(255, 215, 0);
-        border-radius: 6px;
-    } 
     
     .navbar ul li a:hover {
         transition: all 0.2s linear;
@@ -618,10 +552,6 @@ body#soporte ul.menu li:nth-child(5) a {
         padding: 30px 100px 0 0;
     }
     
-    .footer_redes a {
-        padding: 10px;
-    }
-    
     .footer_derechos {
         grid-area: footer_derechos;
         display: flex;
@@ -660,22 +590,16 @@ body#soporte ul.menu li:nth-child(5) a {
         height: 41px;
     }
     
+    .img img {
+        margin: 50px 0 0 0;
+        width: 70%;
+    }
     
     .imagen_principal {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: "imagen_principal";
-    }
-    
-    .img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .img img {
-        width: 800px;
     }
     
     .seccion_1_index {
@@ -724,30 +648,6 @@ body#soporte ul.menu li:nth-child(5) a {
         font-family: 'Berkshire Swash', cursive;
         width: 30%;
         font-size: 18px;
-    }
-    
-    .link_info:hover {
-        color: #fff;
-     } 
-    
-    .link_info::after {
-        content: "";
-        background: #1A668C; 
-        position: absolute;
-        z-index: -1;
-        padding: 16px 20px;
-        display: block;
-        left: -20%;
-        right: -20%;
-        top: 0;
-        bottom: 0;
-        transform: skewX(-45deg) scale(0, 1);
-        transition: all 0.3s ease;
-    }
-    
-    .link_info:hover::after {
-        transition: all 0.3s ease-out;
-        transform: skewX(-45deg) scale(1, 1);
     }
     
     .link_info i {
@@ -880,33 +780,23 @@ body#soporte ul.menu li:nth-child(5) a {
     .equipos img {
         width: 230px;
     }
-    
-    #principal_sobreNosotros {
-        display: flex;
-        justify-content: space-evenly;   
+
+    .principal_sobreNosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "historia_desc";
     }
-    
-    #historia {
+
+    .historia_desc {
+        grid-area: historia_desc;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
     }
     
-    #historia h1 {
-        font-size: 30px;
-        color: rgba(255, 255, 255);
-        padding-bottom: 10px;
-        font-family: 'Cinzel Decorative', cursive;
-    }
-    
-    #historia hr {
-        border: 1px solid rgba(255, 255, 255);
-        border-radius: 20px;
-        width: 90%;
-    }
-    
-    #historia p {
+    .historia_desc p {
         font-size: 20px;
         text-align: center;
         color: rgba(255, 255, 255);
@@ -914,41 +804,37 @@ body#soporte ul.menu li:nth-child(5) a {
         font-family: 'Berkshire Swash', cursive;
     }
     
-    #titulo_valores {
+    .descripcion_valores {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 1fr;
+        grid-template-areas: "historia" "valores_seccion" ;
+    }
+
+    .historia {
+        grid-area: historia;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
+        flex-direction: column;
     }
-    
-    #titulo_valores h2 {
-        font-size: 30px;
-        margin: 10px 0 10px 0;
-        color: rgba(255, 255, 255);
-        font-family: 'Cinzel Decorative', cursive;
-    }
-    
-    #titulo_valores hr {
-        border: 1px solid rgb(255, 255 , 255);
-        border-radius: 20px;
-        width: 90%;
-    }
-    
-    #valores {
+
+    .valores_seccion {
+        grid-area: valores_seccion;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
     
-    #valores h2 {
+    .valores_seccion h2 {
         font-size: 20px;
         color: rgb(255, 255 , 255);
         text-align: center;
         font-family: 'Cinzel Decorative', cursive;
     }
     
-    #valores img {
+    .valores_seccion img {
         margin: 30px 0 30px 0;
     }
     
@@ -977,9 +863,6 @@ body#soporte ul.menu li:nth-child(5) a {
         border-radius: 100%;
     }
     
-    #valores h2 {
-        text-align: center;
-    }
     
     #img_personajes img{
         width: 1348px;
