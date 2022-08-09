@@ -7,27 +7,20 @@
     padding: 0;
 }
 
-.background {
+.background_1_index {
+    background-image: url(../img/background/background_1_index.jpg);
+    background-position: 10% 5%;
+    background-repeat: repeat;
+}
+
+.background_blur {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#background_1_index {
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    z-index: -1;
-    opacity: 0.7;
-    object-fit: cover;
-    object-position: 0% 100%;
-}
-
-#background_2_index {
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    z-index: -1;
-    opacity: 0.6;
-    object-fit: cover;
+.background_2_index {
+    background-image: url(../img/background/background_2_index.jpeg);
+    background-position: 87%;
+    background-repeat: repeat;
 }
 
 #background_1_sobreNosotros {
@@ -121,12 +114,20 @@
 }
 
 .logo {
+    order: 1;
     width: 70px;
+    margin: 0 auto 0 auto;
 }
 
 .btn_menu {
+    position: absolute;
+    order: -1;
     font-size: 25px;
-    margin: 0 10px 0 0;
+    left: 17px;
+    top: 17px;
+    font-size: 37px;
+    color: rgb(255, 255 , 255);
+    text-decoration: none;
 }
 
 .menu {
@@ -150,31 +151,26 @@
     font-family: 'Cinzel Decorative', cursive;
 }
 
-body#index ul.menu li:nth-child(1) a,
+body#index ul.menu li:nth-child(2) a,
 body#sobreNosotros ul.menu li:nth-child(2) a,
 body#personajes ul.menu li:nth-child(3) a,
 body#noticias ul.menu li:nth-child(4) a,
 body#soporte ul.menu li:nth-child(5) a {
     border-bottom: 3px solid rgb(255, 215, 0);
     border-radius: 6px;
-} 
-
-.navbar ul li a:hover {
-    transition: all 0.2s linear;
     text-shadow: #CCC 1px 0 10px;
     color: rgb(255, 215, 0);
-}
-
+} 
 
 .footer {
-    background-color: rgba(255, 255, 255, 0.61);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .footer_texto {
     display: flex;
     align-items: center;
-    justify-content: start;
-    padding: 30px 0 0 45px;
+    justify-content: center;
+    padding: 10px 0 0 0;
 }
 
 .footer_texto img {
@@ -191,7 +187,6 @@ body#soporte ul.menu li:nth-child(5) a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 100px 0 0;
 }
 
 .footer_redes a {
@@ -202,7 +197,7 @@ body#soporte ul.menu li:nth-child(5) a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 0 15px 15px;
+    padding: 0 0 10px 0;
 }
 
 .footer_derechos p {
@@ -242,7 +237,7 @@ body#soporte ul.menu li:nth-child(5) a {
 }
 
 .img img {
-    width: 250px;
+    width: 100%;
 }
 
 .texto_index {
@@ -253,19 +248,20 @@ body#soporte ul.menu li:nth-child(5) a {
 }
 
 .texto_index h1 {
-    font-size: 20px;
+    font-size: 27px;
     font-family: 'Cinzel Decorative', cursive;
     color: rgb(255, 255 , 255);
-    margin: 0 0 20px 0;
+    margin: 10px 0 20px 0;
+    text-align: center;
 }
 
 .texto_index p {
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'Berkshire Swash', cursive;
     color: rgb(255, 255 , 255);
     text-align: center;
-    padding: 0 50px 0 60px;
-    margin: 0 0 20px 0;
+    padding: 0 15px 0 15px;
+    margin: 0 0 10px 0;
 }
 
 .link_info {
@@ -281,8 +277,8 @@ body#soporte ul.menu li:nth-child(5) a {
     text-decoration: none;
     justify-content: center;
     font-family: 'Berkshire Swash', cursive;
-    width: 15%;
-    font-size: 9px;
+    width: 42%;
+    font-size: 15px;
 }
 
 .link_info:hover {
@@ -310,7 +306,7 @@ body#soporte ul.menu li:nth-child(5) a {
 }
 
 .link_info i {
-    font-size: 11px;
+    font-size: 17px;
 }
 
 .imagen_1_index {
@@ -321,7 +317,8 @@ body#soporte ul.menu li:nth-child(5) a {
 
 .imagen_1_index img {
     border-radius: 30px;
-    width: 200px;
+    width: 70%;
+    margin: 15px 0 0 0;
 }
 
 .patrocinadores {
@@ -329,7 +326,7 @@ body#soporte ul.menu li:nth-child(5) a {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.5);
-    margin: 30px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 .patrocinadores i {
@@ -337,33 +334,25 @@ body#soporte ul.menu li:nth-child(5) a {
 }
 
 .patrocinadores img {
-    margin: 0 10px 0 10px;
+    margin: 0 auto 0 auto;
 }
-
-
-#patrocinadores {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    scroll-snap-type: x mandatory;
-    background-color: rgba(255, 255, 255, 0.61);
-    margin: 20px 0 0 0;
-}
-
 
 #patrocinador1 {
-    width: 70px;
+    /* width: 70px; */
+    width: 30%;
     /* height: 175px; */
 }
 
 #patrocinador2 {
-    width: 80px;
+    /* width: 80px; */
+    width: 30%;
     /* height: 140px; */
 
 }
 
 #patrocinador3 {
-    width: 50px;
+    /* width: 50px; */
+    width: 20%;
     /* height: 98px; */
 }
 
@@ -379,10 +368,6 @@ body#soporte ul.menu li:nth-child(5) a {
     display: none;
 }
 
-.icon {
-    font-size: 30px;
-}
-
 .titulo_equipos {
     display: flex;
     flex-direction: column;
@@ -391,9 +376,10 @@ body#soporte ul.menu li:nth-child(5) a {
 }
 
 .titulo_principal {
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Cinzel Decorative', cursive;
     color: rgb(255, 255 , 255);
+    margin: 10px 0 0 0;
 }
 
 .divisor {
@@ -405,26 +391,32 @@ body#soporte ul.menu li:nth-child(5) a {
 
 .equipos {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin: 10px 0 0 0;
 }
 
 .equipos h3 {
     text-align: center;
+    font-size: 16px;
     font-family: 'Cinzel Decorative', cursive;
     margin: 10px 0 20px 0;
     color: rgb(255, 255 , 255);
 }
 
 .equipos img {
-    width: 100px;
+    width: 120px;
 }
 
 /* Css Desktop */
 @media screen and (min-width: 1024px) {
 
     .btn_menu_desplegable {
+        display: none;
+    }
+
+    .btn_cerrar_menu {
         display: none;
     }
 
@@ -549,6 +541,10 @@ body#soporte ul.menu li:nth-child(5) a {
         width: 70px;
         align-self: center;
         justify-self: center;
+    }
+
+    .btn_menu {
+        display: none;
     }
     
     .navbar {
