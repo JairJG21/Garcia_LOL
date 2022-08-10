@@ -1,6 +1,7 @@
 AOS.init();
 
     function abrirMenu() {
+
       $('.navbar ul').css(
         {
           "display": "initial",
@@ -9,7 +10,12 @@ AOS.init();
           "top": "0",
           "overflow": "hidden",
           "background-color": "rgb(0, 0, 0)",
-          "width": "100%"
+          "width": "100%",
+          "animation-name": "abrirMenuAnimacion",
+          "animation-duration": "1s",
+          "border-bottom-left-radius": "20px",
+          "border-bottom-right-radius": "20px",
+          "box-shadow": "0 5px 15px rgb(255, 255 , 255)"
         });
 
         $('.btn_cerrar_menu').css(
@@ -26,7 +32,7 @@ AOS.init();
           "margin": "5px 0 0 0",
           "padding": "10px 0 10px 20px"
         });
-      }
+    }
 
     function cerrarMenu() {
       $('.navbar ul').css(
@@ -37,7 +43,12 @@ AOS.init();
           "top": "",
           "overflow": "",
           "background-color": "",
-          "width": ""
+          "width": "",
+          "animation-name": "",
+          "animation-duration": "",
+          "border-bottom-left-radius": "",
+          "border-bottom-right-radius": "",
+          "box-shadow": ""
         });
 
         $('.btn_cerrar_menu').css(

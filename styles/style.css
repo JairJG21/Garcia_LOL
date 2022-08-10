@@ -467,6 +467,17 @@ body#soporte ul.menu li:nth-child(5) a {
     border-radius: 100%;
 }
 
+@keyframes abrirMenuAnimacion {
+    from {
+         height: 0%;
+         opacity: 0;
+    }
+    to {
+        height: 397%;
+        opacity: 1;
+    }
+}
+
 /* Css Desktop */
 @media screen and (min-width: 1024px) {
 
