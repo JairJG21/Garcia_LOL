@@ -220,7 +220,15 @@ body#soporte ul.menu li:nth-child(6) a {
     justify-content: center;
 }
 
-.img img {
+.img_index {
+    width: 100%;
+}
+
+.img_sobreNosotros {
+    width: 100%;
+}
+
+.img_personajes {
     width: 100%;
 }
 
@@ -757,7 +765,6 @@ body#soporte ul.menu li:nth-child(6) a {
     overflow: hidden;
     display: flex;
     text-decoration: none;
-    margin-top: 10px;
     justify-content: center;
     font-family: 'Berkshire Swash', cursive;
     width: 50%;
@@ -912,16 +919,33 @@ body#soporte ul.menu li:nth-child(6) a {
         height: 41px;
     }
     
-    .img img {
-        margin: 50px 0 0 0;
-        width: 70%;
-    }
-    
     .imagen_principal {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: "imagen_principal";
+    }
+
+    .img {
+        grid-area: imagen_principal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img_index {
+        margin: 50px 0 0 0;
+        width: 80%;
+    }
+
+    .img_sobreNosotros {
+        margin: -100px 0 0 0;
+        width: 100%;
+    }
+
+    .img_personajes {
+        margin: 17px 0 0 0;
+        width: 100%;
     }
     
     .seccion_1_index {
@@ -1011,7 +1035,6 @@ body#soporte ul.menu li:nth-child(6) a {
     .patrocinadores img {
         margin: 0 30px 0 30px;
     }
-    
     
     #patrocinadores {
         display: flex;
@@ -1218,7 +1241,6 @@ body#soporte ul.menu li:nth-child(6) a {
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-evenly;
-        margin: 0 0 140px 0;
     }
 
     .personaje_blur_back {
@@ -1228,7 +1250,7 @@ body#soporte ul.menu li:nth-child(6) a {
         height: 93%;
         transition: all 0.2s linear;
     }
-    
+
     .personaje_1 {
         background-image: url(../img/personajes/Evelynn.jpg);
         background-size: 100% 100%;
@@ -1236,28 +1258,30 @@ body#soporte ul.menu li:nth-child(6) a {
         background-size: cover;
         background-position: 50%;
         width: 30%;
-        height: 60%;
         border-radius: 20px 0 20px 0;
         margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .personaje_1 span {
         color: rgb(255, 255 , 255);
-        font-size: 15px;
+        font-size: 18px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
     .personaje_1 h2 {
         color: rgb(255, 255 , 255);
-        font-size: 20px;
+        font-size: 30px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
     .personaje_1 p {
         color: rgb(255, 255 , 255);
-        font-size: 15px;
+        font-size: 18px;
         font-family: 'Berkshire Swash', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
@@ -1269,28 +1293,27 @@ body#soporte ul.menu li:nth-child(6) a {
         background-size: cover;
         background-position: 50%;
         width: 30%;
-        height: 60%;
         border-radius: 20px 0 20px 0;
         margin-bottom: 20px;
     }
     
     .personaje_2 span {
         color: rgb(255, 255 , 255);
-        font-size: 15px;
+        font-size: 18px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
     .personaje_2 h2 {
         color: rgb(255, 255 , 255);
-        font-size: 20px;
+        font-size: 30px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
     .personaje_2 p {
         color: rgb(255, 255 , 255);
-        font-size: 15px;
+        font-size: 18px;
         font-family: 'Berkshire Swash', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
@@ -1302,21 +1325,27 @@ body#soporte ul.menu li:nth-child(6) a {
         background-size: cover;
         background-position: 50%;
         width: 30%;
-        height: 60%;
         border-radius: 20px 0 20px 0;
         margin-bottom: 20px;
     }
     
+    .personaje_3 span {
+        color: rgb(255, 255 , 255);
+        font-size: 18px;
+        font-family: 'Cinzel Decorative', cursive;
+        text-shadow: rgb(255, 255, 255) 1px 0 10px;
+    }
+
     .personaje_3 h2 {
         color: rgb(255, 255 , 255);
-        font-size: 20px;
+        font-size: 30px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
     .personaje_3 p {
         color: rgb(255, 255 , 255);
-        font-size: 15px;
+        font-size: 18px;
         font-family: 'Berkshire Swash', cursive;
         text-shadow: rgb(255, 255 , 255) 1px 0 10px;
     }
@@ -1328,27 +1357,26 @@ body#soporte ul.menu li:nth-child(6) a {
         background-size: cover;
         background-position: 50%;
         width: 30%;
-        height: 60%;
         border-radius: 20px 0 20px 0;
     }
     
     .personaje_4 span {
         color: rgb(255, 255 , 255);
-        font-size: 15px;
+        font-size: 18px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
     .personaje_4 h2 {
         color: rgb(255, 255 , 255);
-        font-size: 20px;
+        font-size: 30px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
     .personaje_4 p {
         color: rgb(255, 255 , 255);
-        font-size: 15px;
+        font-size: 18px;
         font-family: 'Berkshire Swash', cursive;
         text-shadow: rgb(255, 255 , 255) 1px 0 10px;
     }
@@ -1360,27 +1388,26 @@ body#soporte ul.menu li:nth-child(6) a {
         background-size: cover;
         background-position: 50%;
         width: 30%;
-        height: 60%;
         border-radius: 20px 0 20px 0;
     }
     
     .personaje_5 span {
         color: rgb(255, 255 , 255);
-        font-size: 15px;
+        font-size: 18px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
     .personaje_5 h2 {
         color: rgb(255, 255 , 255);
-        font-size: 20px;
+        font-size: 30px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
     .personaje_5 p {
         color: rgb(255, 255 , 255);
-        font-size: 15px;
+        font-size: 18px;
         font-family: 'Berkshire Swash', cursive;
         text-shadow: rgb(255, 255 , 255) 1px 0 10px;
     }
@@ -1392,27 +1419,27 @@ body#soporte ul.menu li:nth-child(6) a {
         background-size: cover;
         background-position: 50%;
         width: 30%;
-        height: 60%;
         border-radius: 20px 0 20px 0;
+        margin: -20px 0 0 0;
     }
     
     .personaje_6 span {
         color: rgb(255, 255 , 255);
-        font-size: 15px;
+        font-size: 18px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
     .personaje_6 h2 {
         color: rgb(255, 255 , 255);
-        font-size: 20px;
+        font-size: 30px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
     .personaje_6 p {
         color: rgb(255, 255 , 255);
-        font-size: 15px;
+        font-size: 18px;
         font-family: 'Berkshire Swash', cursive;
         text-shadow: rgb(255, 255 , 255) 1px 0 10px;
     }
@@ -1421,7 +1448,7 @@ body#soporte ul.menu li:nth-child(6) a {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 25px;
+        margin: 0 0 25px 0;
     }
     
     .link_campeones {
