@@ -35,24 +35,16 @@
     background-repeat: repeat;
 }
 
-#background_1_personajes {
-    width: 100%;
-    height: 87%;
-    position: absolute;
-    z-index: -1;
-    opacity: 0.7;
-    object-fit: cover;
-    object-position: 50% 100%;
+.background_1_personajes {
+    background-image: url(../img/background/background_1_personajes.jpg);
+    background-position: 60% 80%;
+    background-repeat: repeat;
 }
 
-#background_2_personajes {
-    width: 100%;
-    height: 143%;
-    position: absolute;
-    z-index: -1;
-    opacity: 0.7;
-    object-fit: cover;
-    object-position: 50% 100%;
+.background_2_personajes { 
+    background-image: url(../img/background/background_2_personajes.jpg);
+    background-position: 60% 80%;
+    background-repeat: repeat;
 }
 
 #background_1_noticias {
@@ -145,9 +137,9 @@
 
 body#index ul.menu li:nth-child(2) a,
 body#sobreNosotros ul.menu li:nth-child(3) a,
-body#personajes ul.menu li:nth-child(3) a,
-body#noticias ul.menu li:nth-child(4) a,
-body#soporte ul.menu li:nth-child(5) a {
+body#personajes ul.menu li:nth-child(4) a,
+body#noticias ul.menu li:nth-child(5) a,
+body#soporte ul.menu li:nth-child(6) a {
     border-bottom: 3px solid rgb(255, 215, 0);
     border-radius: 6px;
     text-shadow: #CCC 1px 0 10px;
@@ -467,15 +459,334 @@ body#soporte ul.menu li:nth-child(5) a {
     border-radius: 100%;
 }
 
-@keyframes abrirMenuAnimacion {
-    from {
-         height: 0%;
-         opacity: 0;
-    }
-    to {
-        height: 397%;
-        opacity: 1;
-    }
+.principal_personajes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.titulo_personajes {
+    display: flex;
+    width : 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.parrafo_personajes {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Berkshire Swash', cursive;
+    color: rgb(255, 255 , 255); 
+    margin: 5px 0 10px 0;
+ }
+
+.personajes_detalle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.link_personaje {
+    background: #fff;
+    color: #1A668C;
+    border: 2px solid #1A668C; 
+    padding: 7px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    text-decoration: none;
+    margin-top: 10px;
+    justify-content: center;
+    font-family: 'Berkshire Swash', cursive;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+
+.link_personaje:hover {
+    color: #fff;/* color de fuente hover */
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.link_personaje::after {
+    content: "";
+    background: #1A668C; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.3s ease;
+}
+
+.link_personaje:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+}
+
+.icon_personaje {
+    font-size: 18px;
+    margin-left: 3px;
+}
+
+.personaje_blur_back {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px 0 20px 0;
+    transition: all 0.2s linear;
+}
+
+.personaje_blur_back:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.personaje_1 {
+    background-image: url(../img/personajes/Evelynn.jpg);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 70%;
+    border-radius: 20px 0 20px 0;
+    margin: 0 0 20px 0;
+}
+
+.personaje_1 span {
+    color: rgb(255, 255 , 255);
+    font-size: 12px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.personaje_1 h2 {
+    color: rgb(255, 255 , 255);
+    font-size: 20px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.personaje_1 p {
+    color: rgb(255, 255 , 255);
+    font-size: 13px;
+    font-family: 'Berkshire Swash', cursive;
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.personaje_2 {
+    background-image: url(../img/personajes/Blitzcrank.jpg);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 70%;
+    border-radius: 20px 0 20px 0;
+    margin-bottom: 20px;
+}
+
+.personaje_2 span {
+    color: rgb(255, 255 , 255);
+    font-size: 12px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.personaje_2 h2 {
+    color: rgb(255, 255 , 255);
+    font-size: 20px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.personaje_2 p {
+    color: rgb(255, 255 , 255);
+    font-size: 13px;
+    font-family: 'Berkshire Swash', cursive;
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.personaje_3 {
+    background-image: url(../img/personajes/Heimerdinger.jpg);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 70%;
+    border-radius: 20px 0 20px 0;
+    margin-bottom: 20px;
+}
+
+.personaje_3 span {
+    color: rgb(255, 255 , 255);
+    font-size: 12px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.personaje_3 h2 {
+    color: rgb(255, 255 , 255);
+    font-size: 20px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.personaje_3 p {
+    color: rgb(255, 255 , 255);
+    font-size: 13px;
+    font-family: 'Berkshire Swash', cursive;
+    text-shadow: rgb(255, 255 , 255) 1px 0 10px;
+}
+
+.personaje_4 {
+    background-image: url(../img/personajes/Twitch.jpg);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 70%;
+    border-radius: 20px 0 20px 0;
+    margin-bottom: 20px;
+}
+
+.personaje_4 span {
+    color: rgb(255, 255 , 255);
+    font-size: 12px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.personaje_4 h2 {
+    color: rgb(255, 255 , 255);
+    font-size: 20px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.personaje_4 p {
+    color: rgb(255, 255 , 255);
+    font-size: 13px;
+    font-family: 'Berkshire Swash', cursive;
+    text-shadow: rgb(255, 255 , 255) 1px 0 10px;
+}
+
+.personaje_5 {
+    background-image: url(../img/personajes/Neeko.jpg);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 70%;
+    border-radius: 20px 0 20px 0;
+    margin-bottom: 20px;
+}
+
+.personaje_5 span {
+    color: rgb(255, 255 , 255);
+    font-size: 12px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.personaje_5 h2 {
+    color: rgb(255, 255 , 255);
+    font-size: 20px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.personaje_5 p {
+    color: rgb(255, 255 , 255);
+    font-size: 13px;
+    font-family: 'Berkshire Swash', cursive;
+    text-shadow: rgb(255, 255 , 255) 1px 0 10px;
+}
+
+.personaje_6 {
+    background-image: url(../img/personajes/TahmKench.jpg);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 70%;
+    border-radius: 20px 0 20px 0;
+}
+
+.personaje_6 span {
+    color: rgb(255, 255 , 255);
+    font-size: 12px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.personaje_6 h2 {
+    color: rgb(255, 255 , 255);
+    font-size: 20px;
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.personaje_6 p {
+    color: rgb(255, 255 , 255);
+    font-size: 13px;
+    font-family: 'Berkshire Swash', cursive;
+    text-shadow: rgb(255, 255 , 255) 1px 0 10px;
+}
+
+.mas_campeones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+
+.link_campeones {
+    background: #fff; /* color de fondo */
+    color: #1A668C; /* color de fuente */
+    border: 2px solid #1A668C; /* tamaño y color de borde */
+    padding: 8px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    text-decoration: none;
+    margin-top: 10px;
+    justify-content: center;
+    font-family: 'Berkshire Swash', cursive;
+    width: 50%;
+    font-size: 17px;
+}
+
+.link_campeones:hover {
+    color: #fff;/* color de fuente hover */
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+}
+
+.link_campeones::after {
+    content: "";
+    background: #1A668C; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.3s ease;
+}
+
+.link_campeones:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
 }
 
 /* Css Desktop */
@@ -874,549 +1185,246 @@ body#soporte ul.menu li:nth-child(5) a {
         border-radius: 100%;
     }
     
-    
-    #img_personajes img{
-        width: 1348px;
-        height: 575px;
+    .principal_personajes {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "texto_personajes";
     }
-    
-    #principal_personajes {
-        display: flex;
-        justify-content: space-evenly;
+
+    .titulo_personajes {
+        grid-area: texto_personajes;
     }
-    
-    #titulo_personajes {
-        display: flex;
-        width : 100%;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
+
+    .personajes_main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "personajes_detalle";
     }
-    
-    #titulo_personajes h1 {
-       text-align: center;
-       font-size: 30px;
-       font-family: 'Cinzel Decorative', cursive;
-       margin-top: 20px;
-     
-    }
-    
-    #titulo_personajes p {
+
+    .parrafo_personajes {
         text-align: center;
         font-size: 20px;
-        font-family: 'Berkshire Swash', cursive;    
-        padding-bottom: 10px; 
+        font-family: 'Berkshire Swash', cursive;
+        color: rgb(255, 255 , 255); 
+        margin: 5px 0 10px 0;
      }
-    
-     #titulo_personajes hr {
-        border: 1px solid rgb(0, 0 , 0); 
-        width: 90%;
-        border-radius: 20px;
-        margin-bottom: 20px;
-     }
-    
-    #personajes_detalle {
+
+    .personajes_detalle {
+        grid-area: personaje_detalle;
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-evenly;
-        flex-wrap: wrap;
-        width: 100%;
+        margin: 0 0 140px 0;
+    }
+
+    .personaje_blur_back {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 10px 15px 10px 15px;
+        border-radius: 20px 0 20px 0;
+        height: 93%;
+        transition: all 0.2s linear;
     }
     
-    #personaje_1 {
+    .personaje_1 {
         background-image: url(../img/personajes/Evelynn.jpg);
         background-size: 100% 100%;
         background-repeat:no-repeat;
         background-size: cover;
         background-position: 50%;
-        width: 27%;
-        padding: 10px 15px 10px 15px;
+        width: 30%;
+        height: 60%;
         border-radius: 20px 0 20px 0;
         margin-bottom: 20px;
     }
     
-    #personaje_1 span {
+    .personaje_1 span {
         color: rgb(255, 255 , 255);
         font-size: 15px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
-    #personaje_1 h2 {
+    .personaje_1 h2 {
         color: rgb(255, 255 , 255);
         font-size: 20px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
-    #personaje_1 p {
+    .personaje_1 p {
         color: rgb(255, 255 , 255);
         font-size: 15px;
         font-family: 'Berkshire Swash', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
-    #personaje_1 a {
-        background: #fff;
-        color: #1A668C;
-        border: 2px solid #1A668C; 
-        padding: 8px;
-        border-radius: 3px;
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
-        display: flex;
-        text-decoration: none;
-        margin-top: 10px;
-        justify-content: center;
-        font-family: 'Berkshire Swash', cursive;
-        width: 150px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #personaje_1 a:hover {
-        color: #fff;/* color de fuente hover */
-        text-shadow: rgb(255, 255, 255) 1px 0 10px;
-    }
-    
-    #personaje_1 a::after {
-        content: "";
-        background: #1A668C; /* color de fondo hover */
-        position: absolute;
-        z-index: -1;
-        padding: 16px 20px;
-        display: block;
-        left: -20%;
-        right: -20%;
-        top: 0;
-        bottom: 0;
-        transform: skewX(-45deg) scale(0, 1);
-        transition: all 0.3s ease;
-    }
-    
-    #personaje_1 a:hover::after {
-        transition: all 0.3s ease-out;
-        transform: skewX(-45deg) scale(1, 1);
-    }
-    
-    #personaje_1 a i {
-        font-size: 18px;
-        margin-left: 3px;
-    }
-    
-    #personaje_2 {
+    .personaje_2 {
         background-image: url(../img/personajes/Blitzcrank.jpg);
         background-size: 100% 100%;
         background-repeat:no-repeat;
         background-size: cover;
         background-position: 50%;
-        width: 27%;
-        padding: 10px 15px 10px 15px;
+        width: 30%;
+        height: 60%;
         border-radius: 20px 0 20px 0;
         margin-bottom: 20px;
     }
     
-    #personaje_2 span {
+    .personaje_2 span {
         color: rgb(255, 255 , 255);
         font-size: 15px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
-    #personaje_2 h2 {
+    .personaje_2 h2 {
         color: rgb(255, 255 , 255);
         font-size: 20px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
-    #personaje_2 p {
+    .personaje_2 p {
         color: rgb(255, 255 , 255);
         font-size: 15px;
         font-family: 'Berkshire Swash', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
-    #personaje_2 a {
-        background: #fff;
-        color: #1A668C;
-        border: 2px solid #1A668C; 
-        padding: 8px;
-        border-radius: 3px;
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
-        display: flex;
-        text-decoration: none;
-        margin-top: 10px;
-        justify-content: center;
-        font-family: 'Berkshire Swash', cursive;
-        width: 150px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #personaje_2 a:hover {
-        color: #fff;/* color de fuente hover */
-        text-shadow: rgb(255, 255, 255) 1px 0 10px;
-    }
-    
-    #personaje_2 a::after {
-        content: "";
-        background: #1A668C; /* color de fondo hover */
-        position: absolute;
-        z-index: -1;
-        padding: 16px 20px;
-        display: block;
-        left: -20%;
-        right: -20%;
-        top: 0;
-        bottom: 0;
-        transform: skewX(-45deg) scale(0, 1);
-        transition: all 0.3s ease;
-    }
-    
-    #personaje_2 a:hover::after {
-        transition: all 0.3s ease-out;
-        transform: skewX(-45deg) scale(1, 1);
-    }
-    
-    #personaje_2 a i {
-        font-size: 18px;
-        margin-left: 3px;
-    }
-    
-    #personaje_3 {
+    .personaje_3 {
         background-image: url(../img/personajes/Heimerdinger.jpg);
         background-size: 100% 100%;
         background-repeat:no-repeat;
         background-size: cover;
         background-position: 50%;
-        width: 27%;
-        padding: 10px 15px 10px 15px;
+        width: 30%;
+        height: 60%;
         border-radius: 20px 0 20px 0;
-        color: rgb(255, 255 , 255);
-        font-size: 15px;
-        font-family: 'Cinzel Decorative', cursive;
-        text-shadow: rgb(255, 255, 255) 1px 0 10px;
         margin-bottom: 20px;
     }
     
-    #personaje_3 h2 {
+    .personaje_3 h2 {
         color: rgb(255, 255 , 255);
         font-size: 20px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
-    #personaje_3 p {
+    .personaje_3 p {
         color: rgb(255, 255 , 255);
         font-size: 15px;
         font-family: 'Berkshire Swash', cursive;
         text-shadow: rgb(255, 255 , 255) 1px 0 10px;
     }
-    
-    #personaje_3 a {
-        background: #fff;
-        color: #1A668C;
-        border: 2px solid #1A668C; 
-        padding: 8px;
-        border-radius: 3px;
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
-        display: flex;
-        text-decoration: none;
-        margin-top: 10px;
-        justify-content: center;
-        font-family: 'Berkshire Swash', cursive;
-        width: 150px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #personaje_3 a:hover {
-        color: #fff;/* color de fuente hover */
-        text-shadow: rgb(255, 255, 255) 1px 0 10px;
-    }
-    
-    #personaje_3 a::after {
-        content: "";
-        background: #1A668C; /* color de fondo hover */
-        position: absolute;
-        z-index: -1;
-        padding: 16px 20px;
-        display: block;
-        left: -20%;
-        right: -20%;
-        top: 0;
-        bottom: 0;
-        transform: skewX(-45deg) scale(0, 1);
-        transition: all 0.3s ease;
-    }
-    
-    #personaje_3 a:hover::after {
-        transition: all 0.3s ease-out;
-        transform: skewX(-45deg) scale(1, 1);
-    }
-    
-    #personaje_3 a i {
-        font-size: 18px;
-        margin-left: 3px;
-    }
-    
-    #personaje_4 {
+
+    .personaje_4 {
         background-image: url(../img/personajes/Twitch.jpg);
         background-size: 100% 100%;
         background-repeat:no-repeat;
         background-size: cover;
         background-position: 50%;
-        width: 27%;
-        padding: 10px 15px 10px 15px;
+        width: 30%;
+        height: 60%;
         border-radius: 20px 0 20px 0;
     }
     
-    #personaje_4 span {
+    .personaje_4 span {
         color: rgb(255, 255 , 255);
         font-size: 15px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
-    #personaje_4 h2 {
+    .personaje_4 h2 {
         color: rgb(255, 255 , 255);
         font-size: 20px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
-    #personaje_4 p {
+    .personaje_4 p {
         color: rgb(255, 255 , 255);
         font-size: 15px;
         font-family: 'Berkshire Swash', cursive;
         text-shadow: rgb(255, 255 , 255) 1px 0 10px;
     }
     
-    #personaje_4 a {
-        background: #fff;
-        color: #1A668C;
-        border: 2px solid #1A668C; 
-        padding: 8px;
-        border-radius: 3px;
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
-        display: flex;
-        text-decoration: none;
-        margin-top: 10px;
-        justify-content: center;
-        font-family: 'Berkshire Swash', cursive;
-        width: 150px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #personaje_4 a:hover {
-        color: #fff;/* color de fuente hover */
-        text-shadow: rgb(255, 255, 255) 1px 0 10px;
-    }
-    
-    #personaje_4 a::after {
-        content: "";
-        background: #1A668C; /* color de fondo hover */
-        position: absolute;
-        z-index: -1;
-        padding: 16px 20px;
-        display: block;
-        left: -20%;
-        right: -20%;
-        top: 0;
-        bottom: 0;
-        transform: skewX(-45deg) scale(0, 1);
-        transition: all 0.3s ease;
-    }
-    
-    #personaje_4 a:hover::after {
-        transition: all 0.3s ease-out;
-        transform: skewX(-45deg) scale(1, 1);
-    }
-    
-    #personaje_4 a i {
-        font-size: 18px;
-        margin-left: 3px;
-    }
-    
-    #personaje_5 {
+    .personaje_5 {
         background-image: url(../img/personajes/Neeko.jpg);
         background-size: 100% 100%;
         background-repeat:no-repeat;
         background-size: cover;
         background-position: 50%;
-        width: 27%;
-        padding: 10px 15px 10px 15px;
+        width: 30%;
+        height: 60%;
         border-radius: 20px 0 20px 0;
     }
     
-    #personaje_5 span {
+    .personaje_5 span {
         color: rgb(255, 255 , 255);
         font-size: 15px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
-    #personaje_5 h2 {
+    .personaje_5 h2 {
         color: rgb(255, 255 , 255);
         font-size: 20px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
-    #personaje_5 p {
+    .personaje_5 p {
         color: rgb(255, 255 , 255);
         font-size: 15px;
         font-family: 'Berkshire Swash', cursive;
         text-shadow: rgb(255, 255 , 255) 1px 0 10px;
     }
-    
-    #personaje_5 a {
-        background: #fff;
-        color: #1A668C;
-        border: 2px solid #1A668C; 
-        padding: 8px;
-        border-radius: 3px;
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
-        display: flex;
-        text-decoration: none;
-        margin-top: 10px;
-        justify-content: center;
-        font-family: 'Berkshire Swash', cursive;
-        width: 150px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #personaje_5 a:hover {
-        color: #fff;/* color de fuente hover */
-        text-shadow: rgb(255, 255, 255) 1px 0 10px;
-    }
-    
-    #personaje_5 a::after {
-        content: "";
-        background: #1A668C; /* color de fondo hover */
-        position: absolute;
-        z-index: -1;
-        padding: 16px 20px;
-        display: block;
-        left: -20%;
-        right: -20%;
-        top: 0;
-        bottom: 0;
-        transform: skewX(-45deg) scale(0, 1);
-        transition: all 0.3s ease;
-    }
-    
-    #personaje_5 a:hover::after {
-        transition: all 0.3s ease-out;
-        transform: skewX(-45deg) scale(1, 1);
-    }
-    
-    #personaje_5 a i {
-        font-size: 18px;
-        margin-left: 3px;
-    }
-    
-    #personaje_6 {
+
+    .personaje_6 {
         background-image: url(../img/personajes/TahmKench.jpg);
         background-size: 100% 100%;
         background-repeat:no-repeat;
         background-size: cover;
         background-position: 50%;
-        width: 27%;
-        padding: 10px 15px 10px 15px;
+        width: 30%;
+        height: 60%;
         border-radius: 20px 0 20px 0;
     }
     
-    #personaje_6 span {
+    .personaje_6 span {
         color: rgb(255, 255 , 255);
         font-size: 15px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
-    #personaje_6 h2 {
+    .personaje_6 h2 {
         color: rgb(255, 255 , 255);
         font-size: 20px;
         font-family: 'Cinzel Decorative', cursive;
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
-    #personaje_6 p {
+    .personaje_6 p {
         color: rgb(255, 255 , 255);
         font-size: 15px;
         font-family: 'Berkshire Swash', cursive;
         text-shadow: rgb(255, 255 , 255) 1px 0 10px;
     }
-    
-    #personaje_6 a {
-        background: #fff;
-        color: #1A668C;
-        border: 2px solid #1A668C; 
-        padding: 8px;
-        border-radius: 3px;
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
-        display: flex;
-        text-decoration: none;
-        margin-top: 10px;
-        justify-content: center;
-        font-family: 'Berkshire Swash', cursive;
-        width: 150px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #personaje_6 a:hover {
-        color: #fff;/* color de fuente hover */
-        text-shadow: rgb(255, 255, 255) 1px 0 10px;
-    }
-    
-    #personaje_6 a::after {
-        content: "";
-        background: #1A668C; /* color de fondo hover */
-        position: absolute;
-        z-index: -1;
-        padding: 16px 20px;
-        display: block;
-        left: -20%;
-        right: -20%;
-        top: 0;
-        bottom: 0;
-        transform: skewX(-45deg) scale(0, 1);
-        transition: all 0.3s ease;
-    }
-    
-    #personaje_6 a:hover::after {
-        transition: all 0.3s ease-out;
-        transform: skewX(-45deg) scale(1, 1);
-    }
-    
-    #personaje_6 a i {
-        font-size: 18px;
-        margin-left: 3px;
-    }
-    
-    #mas_campeones {
+
+    .mas_campeones {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 25px;
     }
     
-    #link_campeones {
+    .link_campeones {
         background: #fff; /* color de fondo */
         color: #1A668C; /* color de fuente */
         border: 2px solid #1A668C; /* tamaño y color de borde */
@@ -1434,12 +1442,12 @@ body#soporte ul.menu li:nth-child(5) a {
         font-size: 18px;
     }
     
-    #link_campeones:hover {
+    .link_campeones:hover {
         color: #fff;/* color de fuente hover */
         text-shadow: rgb(255, 255, 255) 1px 0 10px;
     }
     
-    #link_campeones::after {
+    .link_campeones::after {
         content: "";
         background: #1A668C; /* color de fondo hover */
         position: absolute;
@@ -1454,14 +1462,9 @@ body#soporte ul.menu li:nth-child(5) a {
         transition: all 0.3s ease;
     }
     
-    #link_campeones:hover::after {
+    .link_campeones:hover::after {
         transition: all 0.3s ease-out;
         transform: skewX(-45deg) scale(1, 1);
-    }
-    
-    #mas_campeones a i {
-        font-size: 19px;
-        margin-left: 3px;
     }
     
     #noticias_principal {
@@ -2088,5 +2091,17 @@ body#soporte ul.menu li:nth-child(5) a {
     #boton_input button[type="reset"]:hover::after {
         transition: all 0.3s ease-out;
         transform: skewX(-45deg) scale(1, 1);
+    }
+}
+
+/* Animaciones */
+@keyframes abrirMenuAnimacion {
+    from {
+         height: 0%;
+         opacity: 0;
+    }
+    to {
+        height: 397%;
+        opacity: 1;
     }
 }
