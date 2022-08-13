@@ -1,4 +1,4 @@
-AOS.init();
+  AOS.init();
 
     function abrirMenu() {
         $('.navbar ul').css(
@@ -34,6 +34,7 @@ AOS.init();
     }
 
     function cerrarMenu() {
+
       $('.navbar ul').css(
         {
           "display": "",
