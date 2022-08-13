@@ -4,138 +4,155 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
     <!-- Estilo -->
     <link rel="stylesheet" href="../styles/style.css">
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap" rel="stylesheet">
+  <!-- AOS CSS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>League Of Legends</title>
   </head>
   <body id="personajes">
-    <div class="background">
-      <img id="background_1_personajes" src="../img/background/background_1_personajes.jpg" alt="">
-      <header>
-        <img src="../img/logo.png" alt="Logo" class="logo" />
-        <nav class="nav">
-          <ul class="menu">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./sobreNosotros.html">Sobre Nosotros</a></li>
-            <li><a href="./personajes.html">Personajes</a></li>
-            <li><a href="./noticias.html">Noticias</a></li>
-            <li><a href="./soporte.html">Soporte</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section class="img_principal">
-        <img src="../img/personajes/personajes.png" alt="personajes de league of legends" />
-      </section>
-    </div>
-    <div class="background">
-    <img id="background_2_personajes" src="../img/background/background_2_personajes.jpg" alt="">
-      <section id="principal_personajes">
-        <article id="titulo_personajes">
-          <h1>CAMPEONES</h1>
-          <p>
-            Con más de 140 campeones, encontrarás el que se ajuste perfectamente a
-            tu estilo de juego. <br /> Domina a uno o domínalos a todos.
-          </p>
-          <hr />
-        </article>
-      </section>
-      <section id="personajes_detalle">
-        <article id="personaje_1">
-          <span id="p_evelyn">ABRAZO DE LA AGONÍA</span>
-          <h2>EVELYN</h2>
-          <p>
-            Dentro de las oscuras vetas de Runaterra, la demonio Evelynn acecha a
-            su siguiente víctima. Seduce a su presa con la apariencia voluptuosa
-            de una mujer humana, pero una vez que alguien sucumbe ante sus
-            encantos, Evelynn revela su verdadera forma.
-          </p>
-          <article id="link_evelyn">
-            <a target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/evelynn/">Mas Información <i class="bi bi-chevron-double-right"></i></a>
+    <div class="background_1_personajes">
+      <div class="background_blur">
+        <header class="encabezado">
+          <img src="../img/logo.png" alt="Logo" class="logo" />
+          <nav class="navbar">
+            <a href="javascript:abrirMenu()">
+              <i class="bi bi-list btn_menu"></i>
+            </a>
+            <ul class="menu">
+              <a class="btn_cerrar_menu" href="javascript:cerrarMenu()"><i class="bi bi-x"></i></a>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../pages/sobreNosotros.html">Sobre Nosotros</a></li>
+              <li><a href="../pages/personajes.html">Personajes</a></li>
+              <li><a href="../pages/noticias.html">Noticias</a></li>
+              <li><a href="../pages/soporte.html">Soporte</a></li>
+            </ul>
+          </nav>
+        </header>
+        <section class="imagen_principal" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <article class="img">
+            <img class="img_personajes" src="../img/personajes/personajes.png" alt="personajes de league of legends" />
           </article>
-        </article>
-        <article id="personaje_2">
-          <span id="p_blitzcrank">EL GRAN GÓLEM DE VAPOR</span>
-          <h2>BLITZCRANK</h2>
-          <p>
-            Blitzcrank es un autómata gigantesco y casi indestructible de Zaun,
-            que originalmente fue creado para deshacerse de los desechos tóxicos.
-            Sin embargo, él cree que su propósito principal era demasiado
-            limitado, así que modificó su propia forma para poder servir mejor.
-          </p>
-          <article id="link_blitzcrank">
-            <a target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/blitzcrank/">Mas Información <i class="bi bi-chevron-double-right"></i></a>
-          </article>
-        </article>
-        <article id="personaje_3">
-          <span id="p_heimerdinger">EL VENERABLE INVENTOR</span>
-          <h2>HEIMERDINGER</h2>
-          <p>
-            El Profesor Cecil B. Heimerdinger, brillante y a veces excéntrico
-            científico yordle, es uno de los inventores más innovadores que
-            Piltóver ha conocido. Implacable en su trabajo hasta llegar a niveles
-            de neurótica obsesión, se alegra en poder contestar las preguntas.
-          </p>
-          <article id="link_heimerdinger">
-            <a target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/heimerdinger/">Mas Información <i class="bi bi-chevron-double-right"></i></a>
-          </article>
-        </article>
-        <article id="personaje_4">
-          <span id="p_twitch">LA RATA MUTANTE</span>
-          <h2>TWITCH</h2>
-          <p>
-              Una rata zaunita de nacimiento, pero conocedor de la más 
-              fina suciedad por pasión. Twitch no tiene miedo de 
-              ensuciarse las patas. Apunta una ballesta potenciada con 
-              químicos hacia el centro de Piltóver y jura mostrarles a los 
-              que habitan arriba.
-          </p>
-          <article id="link_twitch">
-            <a target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/twitch/">Mas Información <i class="bi bi-chevron-double-right"></i></a>
-          </article>
-        </article>
-        <article id="personaje_5">
-          <span id="p_neeko">LA CAMALEÓN CURIOSA</span>
-          <h2>NEEKO</h2>
-          <p>
-              Proveniente de una tribu vastaya perdida desde hace mucho 
-              tiempo, Neeko puede mezclarse en cualquier multitud 
-              adoptando la apariencia de los demás e incluso absorber un 
-              poco de su estado emocional para distinguir a un amigo de 
-              un enemigo tan grande.
-          </p>
-          <article id="link_neeko">
-            <a target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/neeko/">Mas Información <i class="bi bi-chevron-double-right"></i></a>
-          </article>
-        </article>
-        <article id="personaje_6">
-          <span id="p_tahm">EL REY DEL RÍO</span>
-          <h2>TAHM KENCH</h2>
-          <p>
-              Conocido por muchos nombres a lo largo de la historia, el 
-              demonio Tahm Kench viaja a través de las aguas de 
-              Runaterra mientras alimenta su insaciable apetito con la 
-              miseria de otros. Aunque pudiera parecer particularmente 
-              encantador y orgulloso es malvado.
-          </p>
-          <article id="link_tahm">
-            <a target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/tahm-kench/">Mas Información <i class="bi bi-chevron-double-right"></i></a>
-          </article>
-        </article>
-      </section>
-        <section id="mas_campeones">
-          <a id="link_campeones" target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/">Mas Campeones <i class="bi bi-chevron-double-right"></i></a>
         </section>
-      <footer>
-        <section class="footer">
-          <article class="footer_texto">
+      </div>
+    </div>
+    <div class="background_2_personajes">
+      <div class="background_blur">
+        <section class="principal_personajes" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <article class="titulo_personajes">
+            <h1 class="titulo_principal">CAMPEONES</h1>
+            <hr class="divisor" />
+            <p class="parrafo_personajes">
+              Con más de 140 campeones, encontrarás el que se ajuste perfectamente a
+              tu estilo de juego. <br /> Domina a uno o domínalos a todos.
+            </p>
+          </article>
+        </section>
+        <section class="personajes_main">
+          <section class="personajes_detalle">
+            <article class="personaje_1" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+              <div class="personaje_blur_back">
+                <span>ABRAZO DE LA AGONÍA</span>
+                <h2>EVELYN</h2>
+                <p>
+                  Dentro de las oscuras vetas de Runaterra, la demonio Evelynn acecha a
+                  su siguiente víctima. Seduce a su presa con la apariencia voluptuosa
+                  de una mujer humana, pero una vez que alguien sucumbe ante sus
+                  encantos, Evelynn revela su verdadera forma.
+                </p>
+                <article>
+                  <a class="link_personaje" target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/evelynn/">Mas Información <i class="bi bi-chevron-double-right icon_personaje"></i></a>
+                </article>
+              </div>
+            </article>
+            <article class="personaje_2" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+              <div class="personaje_blur_back">
+                <span>EL GRAN GÓLEM DE VAPOR</span>
+                <h2>BLITZCRANK</h2>
+                <p>
+                  Blitzcrank es un autómata gigantesco y casi indestructible de Zaun,
+                  que originalmente fue creado para deshacerse de los desechos tóxicos.
+                  Sin embargo, él cree que su propósito principal era demasiado
+                  limitado, así que modificó su propia forma para poder servir mejor.
+                </p>
+                <article>
+                  <a class="link_personaje" target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/blitzcrank/">Mas Información <i class="bi bi-chevron-double-right icon_personaje"></i></a>
+                </article>
+              </div>
+            </article>
+            <article class="personaje_3" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+              <div class="personaje_blur_back">
+                <span>EL VENERABLE INVENTOR</span>
+                <h2>HEIMERDINGER</h2>
+                <p>
+                  El Profesor Cecil B. Heimerdinger, brillante y a veces excéntrico
+                  científico yordle, es uno de los inventores más innovadores que
+                  Piltóver ha conocido. Implacable en su trabajo hasta llegar a niveles
+                  de neurótica obsesión, se alegra en poder contestar las preguntas.
+                </p>
+                <article>
+                  <a class="link_personaje" target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/heimerdinger/">Mas Información <i class="bi bi-chevron-double-right icon_personaje"></i></a>
+                </article>
+              </div>
+            </article>
+            <article class="personaje_4" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+              <div class="personaje_blur_back">
+                <span>LA RATA MUTANTE</span>
+                <h2>TWITCH</h2>
+                <p>
+                    Una rata zaunita de nacimiento, pero conocedor de la más 
+                    fina suciedad por pasión. Twitch no tiene miedo de 
+                    ensuciarse las patas. Apunta una ballesta potenciada con 
+                    químicos hacia el centro de Piltóver y jura mostrarles a los 
+                    que habitan arriba.
+                </p>
+                <article>
+                  <a class="link_personaje" target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/twitch/">Mas Información <i class="bi bi-chevron-double-right icon_personaje"></i></a>
+                </article>
+              </div>
+            </article>
+            <article class="personaje_5" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+              <div class="personaje_blur_back">
+                <span>LA CAMALEÓN CURIOSA</span>
+                <h2>NEEKO</h2>
+                <p>
+                    Proveniente de una tribu vastaya perdida desde hace mucho 
+                    tiempo, Neeko puede mezclarse en cualquier multitud 
+                    adoptando la apariencia de los demás e incluso absorber un 
+                    poco de su estado emocional para distinguir a un amigo de 
+                    un enemigo tan grande.
+                </p>
+                <article>
+                  <a class="link_personaje" target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/neeko/">Mas Información <i class="bi bi-chevron-double-right icon_personaje"></i></a>
+                </article>
+              </div>
+            </article>
+            <article class="personaje_6" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+              <div class="personaje_blur_back">
+                <span>EL REY DEL RÍO</span>
+                <h2>TAHM KENCH</h2>
+                <p>
+                    Conocido por muchos nombres a lo largo de la historia, el 
+                    demonio Tahm Kench viaja a través de las aguas de 
+                    Runaterra mientras alimenta su insaciable apetito con la 
+                    miseria de otros. Aunque pudiera parecer particularmente 
+                    encantador y orgulloso es malvado.
+                </p>
+                <article>
+                  <a class="link_personaje" target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/tahm-kench/">Mas Información <i class="bi bi-chevron-double-right icon_personaje"></i></a>
+                </article>
+              </div>
+            </article>
+          </section>
+        </section>
+          <section class="mas_campeones" data-aos="zoom-in-up">
+            <a class="link_campeones" target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/">Mas Campeones <i class="bi bi-chevron-double-right icon_personaje"></i></a>
+          </section>
+          <footer class="footer">
+            <article class="footer_texto">
               <img src="../img/clasificacionDelJuego.png" alt="clasificación del juego" />
               <p>
                 Sangre <br />
@@ -147,26 +164,30 @@
             </article>
             <article class="footer_redes">
               <a href="https://www.youtube.com/c/LeagueofLegendsLATAM" target="_blank">
-                <img src="../img/youtubeLogo.png" alt="youtube" id="youtube_icon"/>
+                <img src="../img/youtubeLogo.png" alt="youtube" id="youtube_icon" />
               </a>
               <a href="https://twitter.com/lol_es/" target="_blank">
-                <img src="../img/twitterLogo.png" alt="twitter" id="twitter_icon"/>
+                <img src="../img/twitterLogo.png" alt="twitter" id="twitter_icon" />
               </a>
               <a href="https://es-la.facebook.com/LeagueofLegendsLatino/" target="_blank">
-                <img src="../img/facebookLogo.png" alt="facebook" id="facebook_icon"/>
+                <img src="../img/facebookLogo.png" alt="facebook" id="facebook_icon" />
               </a>
               <a href="https://www.instagram.com/lol_es/" target="_blank">
-                <img src="../img/instagramLogo.png" alt="instagram" id="instagram_icon"/>
+                <img src="../img/instagramLogo.png" alt="instagram" id="instagram_icon" />
               </a>
               <a href="https://www.reddit.com/r/leagueoflegends/" target="_blank">
-                <img src="../img/redditLogo.png" alt="reddit" id="reddit_icon"/>
+                <img src="../img/redditLogo.png" alt="reddit" id="reddit_icon" />
               </a>
-            </section>
-          </article>
-          <section class="derechos">
-            <p>© 2022 Riot Games, Inc. Todos los derechos reservados.</p>
-          </sec>
-      </footer>
+            </article>
+            <article class="footer_derechos">
+              <p>© 2022 Riot Games, Inc. Todos los derechos reservados.</p>
+            </article>
+          </footer>
+      </div>
     </div>
+      <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/functions.js"></script>
   </body>
 </html>
