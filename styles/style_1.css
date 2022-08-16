@@ -7,6 +7,10 @@
 }
 
 .bg-blur {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-navbar {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -71,6 +75,8 @@
     z-index: 1;
     overflow: hidden;
     display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     font-family: 'Berkshire Swash', cursive;
     width: 60%;
@@ -103,4 +109,6 @@
 
 .row_height {
     height: 120px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
