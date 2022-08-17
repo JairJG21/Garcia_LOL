@@ -7,7 +7,7 @@
 }
 
 .bg-blur {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .bg-navbar {
@@ -16,6 +16,10 @@
 
 .icon_menu {
     font-size: 45px;
+}
+
+.logo {
+    margin: 0 32% 0 0;
 }
 
 .background_blur {
@@ -54,15 +58,6 @@
 
 .titulo_terciario {
     font-family: 'Cinzel Decorative', cursive;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-}
-
-.divisor {
-    margin: 2px 0 0 0;
-    width: 90%;
-    border: 1px solid rgb(255, 255 , 255);
-    border-radius: 20px;
 }
 
 .boton_pequeño {
@@ -111,4 +106,43 @@
     height: 120px;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+.derechos {
+    font-size: 12px;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.descripcion_derechos {
+    font-size: 10px;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+#youtube_icon {
+    width: 40px;
+    /* height: 37px; */
+}
+
+#twitter_icon {
+    width: 40px;
+    /* height: 40px; */
+}
+
+#facebook_icon {
+    width: 35px;
+    /* height: 40px; */
+}
+
+#instagram_icon {
+    width: 35px;
+    /* height: 41px; */
+}
+
+#reddit_icon {
+    width: 35px;
+    /* height: 41px; */
+}
+
+@media screen and (min-width: 1024px) {
+    
 }
