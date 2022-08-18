@@ -23,6 +23,10 @@
     order: 2;
 }
 
+.btn-close {
+    background: transparent url(../img/icon_btn_close.svg) center/1em auto no-repeat;
+}
+
 .nav-link {
     font-size: 25px;
     font-family: 'Cinzel Decorative', cursive;
