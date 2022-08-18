@@ -17,57 +17,81 @@
   <title>League Of Legends</title>
 </head>
 
-<body id="index">
+<body id="index"> 
   <div class="background_1_index">
-    <div class="background_blur">
-      <header class="sticky-top bg-navbar">
+    <div class="background_blur"> 
+      <header class="sticky-top bg-navbar"> 
         <nav class="navbar navbar-expand-lg">
-          <section class="container-fluid">
-            <article class="order-2 logo">
-              <a class="navbar-brand" href="#">
-                <img src="./img/logo.png" alt="Logo" width="70" />
-              </a>
-            </article>
-            <article class="order-1">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="container-fluid">
+              <article class="logo">
+                <a class="navbar-brand" href="#">
+                  <img src="./img/logo.png" alt="Logo" width="70" />
+                </a>
+              </article>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <i class="bi bi-list text-white icon_menu"></i>
               </button>
-            </article>
-            <article class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="./pages/sobreNosotros.html">Sobre Nosotros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="./pages/personajes.html">Personajes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="./pages/noticias.html">Noticias</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="./pages/soporte.html">Soporte</a>
-                </li>
-              </ul>
-            </article>
-          </section>
+            <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <img src="./img/logo.png" alt="Logo" width="70" />
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav d-flex align-items-center justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./pages/sobreNosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./pages/personajes.html">Personajes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./pages/noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./pages/soporte.html">Soporte</a>
+                  </li>
+                </ul>
+                <div class="container-fluid footer-canvas">
+                  <section class="row">
+                    <article class="col-sm-12 d-flex align-items-center justify-content-evenly">
+                      <a href="https://www.youtube.com/c/LeagueofLegendsLATAM" target="_blank">
+                        <img src="./img/youtubeLogo.png" alt="youtube" id="youtube_icon" />
+                      </a>
+                      <a href="https://twitter.com/lol_es/" target="_blank">
+                        <img src="./img/twitterLogo.png" alt="twitter" id="twitter_icon" />
+                      </a>
+                      <a href="https://es-la.facebook.com/LeagueofLegendsLatino/" target="_blank">
+                        <img src="./img/facebookLogo.png" alt="facebook" id="facebook_icon" />
+                      </a>
+                      <a href="https://www.instagram.com/lol_es/" target="_blank">
+                        <img src="./img/instagramLogo.png" alt="instagram" id="instagram_icon" />
+                      </a>
+                      <a href="https://www.reddit.com/r/leagueoflegends/" target="_blank">
+                        <img src="./img/redditLogo.png" alt="reddit" id="reddit_icon" />
+                      </a>
+                    </article>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
         </nav>
       </header>
       <section class="container-fluid" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-        <article class="row">
-          <div class="col-xs-12">
-            <img class="img-fluid" src="./img/index/logoDeLeagueOfLegends.png" alt="Logo de league of legends" />
+        <article class="row text-center d-flex align-items-center justify-content-center">
+          <div class="col-xs-12 col-lg-12">
+            <img class="img-fluid img-index" src="./img/index/logoDeLeagueOfLegends.png" alt="Logo de league of legends" />
           </div>
         </article>
       </section>
       <section class="container-fluid mb-5 text-center" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
         <article class="row">
-          <div class="col-xs-12">
-            <h1 class="titulo_principal">¿QUÉ ES LEAGUE OF LEGENDS?</h1>
-            <p class="parrafo_principal">
+          <div class="col-xs-12 col-lg-8 d-flex align-items-center justify-content-center flex-column">
+            <h1 class="titulo_principal text-white">¿QUÉ ES LEAGUE OF LEGENDS?</h1>
+            <p class="parrafo_principal text-white">
               League of Legends es un juego de estrategia por equipos en el que
               dos equipos conformados por cinco poderosos campeones se enfrentan
               para destruir la base del otro. Elige de entre más de 140 campeones
@@ -78,8 +102,8 @@
               href="https://www.leagueoflegends.com/es-mx/how-to-play/?_gl=1*198s4kc*_ga*OTY0ODM5OTU5LjE2NTg5ODI4MDU.*_ga_FXBJE5DEDD*MTY1OTAyNTQ4Mi4yLjEuMTY1OTAyNTQ4OC41NA..&_ga=2.219717146.269356192.1658982805-964839959.1658982805">Mas
               Información <i class="bi bi-chevron-double-right"></i></a>
           </div>
-          <div class="col-xs-12 mt-3">
-            <img class="w-75 rounded" src="./img/index/caratulaDeLeagueOfLegends.jpg" alt="Caratula de league of legends" />
+          <div class="col-xs-12 col-lg-4 mt-3">
+            <img class="rounded img-caratula" src="./img/index/caratulaDeLeagueOfLegends.jpg" alt="Caratula de league of legends" />
           </div>
         </article>
       </section>
@@ -149,7 +173,7 @@
       <section class="container-fluid">
         <article class="row text-center">
           <div class="col-sm-12 mt-3">
-            <h2 class="titulo_secundario">EQUIPOS PROFESIONALES</h2>
+            <h2 class="titulo_secundario text-white">EQUIPOS PROFESIONALES</h2>
             <hr class="border rounded mt-1 order-1 opacity-100"/>
           </div>
         </article>

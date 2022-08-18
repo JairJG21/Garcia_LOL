@@ -119,11 +119,11 @@
     font-family: 'Cinzel Decorative', cursive;
 }
 
-body#index ul.menu li:nth-child(2) a,
-body#sobreNosotros ul.menu li:nth-child(3) a,
-body#personajes ul.menu li:nth-child(4) a,
-body#noticias ul.menu li:nth-child(5) a,
-body#soporte ul.menu li:nth-child(6) a {
+body#index ul.navbar-nav li:nth-child(1) a,
+body#sobreNosotros ul.navbar-nav li:nth-child(2) a,
+body#personajes ul.navbar-nav li:nth-child(3) a,
+body#noticias ul.navbar-nav li:nth-child(4) a,
+body#soporte ul.navbar-nav li:nth-child(5) a {
     border-bottom: 3px solid rgb(255, 215, 0);
     border-radius: 6px;
     text-shadow: #CCC 1px 0 10px;
