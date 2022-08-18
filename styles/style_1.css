@@ -244,6 +244,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px 0 0 0;
 }
 
 .footer_derechos {
