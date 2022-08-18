@@ -60,6 +60,18 @@
     background-repeat: repeat;
 }
 
+.background_1_sobreNosotros {
+    background-image: url(../img/background/background_1_sobreNosotros.jpg);
+    background-position: 60% 80%;
+    background-repeat: repeat;
+}
+
+.background_2_sobreNosotros {
+    background-image: url(../img/background/background_2_sobreNosotros.jpg);
+    background-position: 50%;
+    background-repeat: repeat;
+}
+
 body#index ul.navbar-nav li:nth-child(1) a,
 body#sobreNosotros ul.navbar-nav li:nth-child(2) a,
 body#personajes ul.navbar-nav li:nth-child(3) a,
