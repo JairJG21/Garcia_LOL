@@ -6,154 +6,276 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
-  <!-- Estilo -->
-  <link rel="stylesheet" href="../styles/style.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- Estilo Custom -->
+  <link rel="stylesheet" href="../styles/style_1.css" />
   <!-- Iconos -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
   <!-- AOS CSS-->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>League Of Legends</title>
 </head>
 
 <body id="noticias">
   <div class="background_1_noticias">
     <div class="background_blur">
-      <header class="encabezado">
-        <img src="../img/logo.png" alt="Logo" class="logo" />
-        <nav class="navbar">
-          <a href="javascript:abrirMenu()">
-            <i class="bi bi-list btn_menu"></i>
-          </a>
-          <ul class="menu">
-            <a class="btn_cerrar_menu" href="javascript:cerrarMenu()"><i class="bi bi-x"></i></a>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/sobreNosotros.html">Sobre Nosotros</a></li>
-            <li><a href="../pages/personajes.html">Personajes</a></li>
-            <li><a href="../pages/noticias.html">Noticias</a></li>
-            <li><a href="../pages/soporte.html">Soporte</a></li>
-          </ul>
+      <header class="sticky-top bg-navbar">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <article class="logo">
+              <a class="navbar-brand" href="#">
+                <img src="../img/logo.png" alt="Logo" width="70" />
+              </a>
+            </article>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <i class="bi bi-list text-white icon_menu"></i>
+            </button>
+            <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <img src="../img/logo.png" alt="Logo" width="70" />
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav d-flex align-items-center justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./sobreNosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./personajes.html">Personajes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./soporte.html">Soporte</a>
+                  </li>
+                </ul>
+                <div class="container-fluid footer-canvas">
+                  <section class="row">
+                    <article class="col-sm-12 d-flex align-items-center justify-content-evenly">
+                      <a href="https://www.youtube.com/c/LeagueofLegendsLATAM" target="_blank">
+                        <img src="../img/youtubeLogo.png" alt="youtube" id="youtube_icon" />
+                      </a>
+                      <a href="https://twitter.com/lol_es/" target="_blank">
+                        <img src="../img/twitterLogo.png" alt="twitter" id="twitter_icon" />
+                      </a>
+                      <a href="https://es-la.facebook.com/LeagueofLegendsLatino/" target="_blank">
+                        <img src="../img/facebookLogo.png" alt="facebook" id="facebook_icon" />
+                      </a>
+                      <a href="https://www.instagram.com/lol_es/" target="_blank">
+                        <img src="../img/instagramLogo.png" alt="instagram" id="instagram_icon" />
+                      </a>
+                      <a href="https://www.reddit.com/r/leagueoflegends/" target="_blank">
+                        <img src="../img/redditLogo.png" alt="reddit" id="reddit_icon" />
+                      </a>
+                    </article>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
         </nav>
       </header>
-      <section class="imagen_principal" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-        <article class="img">
-          <img class="img_noticias" src="../img/noticias/noticias.png" alt="noticias de league of legends" />
+      <section class="content-fluid" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <article class="row m-0">
+          <div class="col-sm-12 col-lg-12">
+            <img class="img-fluid" src="../img/noticias/noticias.png" alt="noticias de league of legends" />
+          </div>
         </article>
       </section>
-    </div>
-  </div>
-  <div class="background_2_noticias">
-    <div class="background_blur">
-      <section class="noticias_principal">
-        <article class="titulo_noticias" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-          <h1 class="titulo_principal">Noticias Recientes</h1>
-          <hr class="divisor" />
-        </article>
-      </section>
-      <div class="fondo_noticias" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-        <section class="noticias_general">
-          <article class="noticias">
-            <article class="noticia_1" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                <img src="../img/noticias/noticia1.jpg" alt="ideas sobre el sistema de juego" />
-                <article class="noticia_1_info">
-                  <h4><a href="https://www.leagueoflegends.com/es-mx/news/dev/ideas-sobre-el-sistema-de-juego-24-06/" target="_blank">IDEAS SOBRE EL SISTEMA DE JUEGO</a></h4>
-                  <p>
-                    Hace poco lanzamos la actualización a la durabilidad de los
-                    campeones, así que queríamos compartir nuestra opinión sobre
-                    los resultados...
-                  </p>
-                  <article class="tiempo">
-                    <span><i class="bi bi-clock-history"></i> Hace 3 Semanas</span>
-                  </article>
-                </article>
+      <div class="background_2_noticias">
+        <div class="background_blur">
+          <section class="content-fluid">
+            <article class="row text-center m-0">
+              <div class="col-sm-12">
+                <h1 class="titulo_secundario text-white mt-3" data-aos="zoom-in-up" data-aos-duration="1000"
+                  data-aos-easing="ease-in-out">NOTICIAS RECIENTES</h1>
+                <hr class="border rounded mt-1 order-1 opacity-100" data-aos="zoom-in-up" data-aos-duration="1000"
+                  data-aos-easing="ease-in-out" />
+              </div>
             </article>
-            <article class="noticia_2" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-              <img src="../img/noticias/noticia2.jpg" alt="nilah: la carrilera inferior cuerpo a cuerpo" />
-                <article class="noticia_2_info">
-                  <h4 class="center"><a href="https://www.leagueoflegends.com/es-mx/news/dev/nilah-la-carrilera-inferior-cuerpo-a-cuerpo/" target="_blank">NILAH: LA CARRILERA INFERIOR CUERPO A CUERPO</a></h4>
-                  <p class="center">
-                    De cara al lanzamiento de Nilah, queríamos darles un vistazo
-                    al proceso de diseño de su jugabilidad y al plan de balance
-                    tras su lanzamiento.
-                  </p>
-                  <article class="tiempo">
-                    <span><i class="bi bi-clock-history"></i> Hace 5 Semanas</span>
-                  </article>
-                </article>
-            </article>
-            <article class="noticia_3" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-              <img src="../img/noticias/noticia3.jpg" alt="¿por qué bel´veth es genial?" />
-                <article class="noticia_3_info">
-                  <h4 class="center"><a href="https://www.leagueoflegends.com/es-mx/news/dev/por-que-bel-veth-es-genial/" target="_blank">¿POR QUÉ BEL'VETH ES GENIAL?</a></h4>
-                  <p class="center">
-                    Con toda la emoción que ha surgido por el inminente consumo de
-                    toda Runaterra por parte de Bel'Veth, quisimos celebrar su
-                    lanzamiento al contestar algunas preguntas de los jugadores
-                    que hemos estado viendo.
-                  </p>
-                  <article class="tiempo">
-                    <span><i class="bi bi-clock-history"></i> Hace 1 Mes</span>
-                  </article>
-                </article>
-            </article>
-            <article class="noticia_4" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-              <img src="../img/noticias/noticia4.jpg" alt="bel´veth a fondo" />
-                <article class="noticia_4_info">
-                  <h4 class="center"><a href="https://www.leagueoflegends.com/es-mx/news/dev/bel-veth-a-fondo/" target="_blank">BEL'VETH A FONDO</a></h4>
-                  <p class="center">
-                    El Vacío es la antítesis de la vida. Quiere el fin de la
-                    existencia. Quiere la nada misma. Pero Bel'Veth lo quiere
-                    todo...
-                  </p>
-                  <article class="tiempo">
-                    <span><i class="bi bi-clock-history"></i> Hace 3 Meses</span>
-                  </article>
-                </article>
-            </article>
-          </article>
-          <section class="mas_noticias" data-aos="zoom-in-up">
-            <a target="_blank" class="link_noticias" href="https://www.leagueoflegends.com/es-mx/news/">Mas Noticias <i
-                class="bi bi-chevron-double-right"></i></a>
           </section>
-        </section>
-      </div>
-    </div>
-    <footer class="footer">
-      <article class="footer_texto">
-        <img src="../img/clasificacionDelJuego.png" alt="clasificación del juego" />
-        <p>
-          Sangre <br />
-          Violencia de fantasía <br />
-          Temas insinuantes moderados <br />
-          Uso de alcohol y tabaco <br />
-          Interacciones en linea no clasificadas por la ESRB <br />
-        </p>
-      </article>
-      <article class="footer_redes">
-        <a href="https://www.youtube.com/c/LeagueofLegendsLATAM" target="_blank">
-          <img src="../img/youtubeLogo.png" alt="youtube" id="youtube_icon" />
-        </a>
-        <a href="https://twitter.com/lol_es/" target="_blank">
-          <img src="../img/twitterLogo.png" alt="twitter" id="twitter_icon" />
-        </a>
-        <a href="https://es-la.facebook.com/LeagueofLegendsLatino/" target="_blank">
-          <img src="../img/facebookLogo.png" alt="facebook" id="facebook_icon" />
-        </a>
-        <a href="https://www.instagram.com/lol_es/" target="_blank">
-          <img src="../img/instagramLogo.png" alt="instagram" id="instagram_icon" />
-        </a>
-        <a href="https://www.reddit.com/r/leagueoflegends/" target="_blank">
-          <img src="../img/redditLogo.png" alt="reddit" id="reddit_icon" />
-        </a>
-      </article>
-      <article class="footer_derechos">
-        <p>© 2022 Riot Games, Inc. Todos los derechos reservados.</p>
-      </article>
-    </footer>
-  </div>
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="../js/functions.js"></script>
+          <div class="fondo_noticias ms-3 me-3 mb-3" data-aos="zoom-in-up" data-aos-duration="1000"
+            data-aos-easing="ease-in-out">
+            <section class="content-fluid m-3">
+              <article class="row text-center">
+                <div class="col-sm-12">
+                  <article class="noticia_1" data-aos="zoom-in-up" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
+                    <img class="img_noticias mb-2" src="../img/noticias/noticia1.jpg"
+                      alt="ideas sobre el sistema de juego" />
+                    <article class="noticia_1_info">
+                      <h4 class="titulo_secundario text-white">IDEAS SOBRE EL SISTEMA DE JUEGO</h4>
+                      <p class="parrafo_secundario text-white">
+                        Hace poco lanzamos la actualización a la durabilidad de los
+                        campeones, así que queríamos compartir nuestra opinión sobre
+                        los resultados...
+                      </p>
+                      <article>
+                        <span class="tiempo_noticia text-white"><i class="bi bi-clock-history"></i> Hace 3
+                          Semanas</span>
+                      </article>
+                    </article>
+                  </article>
+                  <div class="d-flex align-item-cente justify-content-center mt-2 mb-2" data-aos="zoom-in-up" data-aos-duration="1000"
+                  data-aos-easing="ease-in-out">
+                    <a href="https://www.leagueoflegends.com/es-mx/news/dev/ideas-sobre-el-sistema-de-juego-24-06/" target="_blank">
+                      <button class="btn_personaje">
+                        <span>Saber Mas</span><i></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="row text-center">
+                <div class="col-sm-12">
+                  <article class="noticia_2" data-aos="zoom-in-up" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
+                    <img class="img_noticias mb-2 mt-2" src="../img/noticias/noticia2.jpg"
+                      alt="nilah: la carrilera inferior cuerpo a cuerpo" />
+                    <article class="noticia_2_info">
+                      <h4 class="titulo_secundario text-white">NILAH: LA CARRILERA INFERIOR CUERPO A CUERPO</h4>
+                      <p class="parrafo_secundario text-white">
+                        De cara al lanzamiento de Nilah, queríamos darles un vistazo
+                        al proceso de diseño de su jugabilidad y al plan de balance
+                        tras su lanzamiento.
+                      </p>
+                      <article>
+                        <span class="tiempo_noticia text-white"><i class="bi bi-clock-history"></i> Hace 5
+                          Semanas</span>
+                      </article>
+                    </article>
+                  </article>
+                  <div class="d-flex align-item-cente justify-content-center mt-2 mb-2" data-aos="zoom-in-up" data-aos-duration="1000"
+                  data-aos-easing="ease-in-out">
+                    <a href="https://www.leagueoflegends.com/es-mx/news/dev/nilah-la-carrilera-inferior-cuerpo-a-cuerpo/" target="_blank">
+                      <button class="btn_personaje">
+                        <span>Saber Mas</span><i></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="row text-center">
+                <div class="col-sm-12">
+                  <article class="noticia_3" data-aos="zoom-in-up" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
+                    <img class="img_noticias mb-2 mt-2" src="../img/noticias/noticia3.jpg"
+                      alt="¿por qué bel´veth es genial?" />
+                    <article class="noticia_3_info">
+                      <h4 class="titulo_secundario text-white">¿POR QUÉ BEL'VETH ES GENIAL?</h4>
+                      <p class="parrafo_secundario text-white">
+                        Con toda la emoción que ha surgido por el inminente consumo de
+                        toda Runaterra por parte de Bel'Veth, quisimos celebrar su
+                        lanzamiento al contestar algunas preguntas de los jugadores
+                        que hemos estado viendo.
+                      </p>
+                      <article>
+                        <span class="tiempo_noticia text-white"><i class="bi bi-clock-history"></i> Hace 1 Mes</span>
+                      </article>
+                    </article>
+                  </article>
+                  <div class="d-flex align-item-cente justify-content-center mt-2 mb-2" data-aos="zoom-in-up" data-aos-duration="1000"
+                  data-aos-easing="ease-in-out">
+                    <a href="https://www.leagueoflegends.com/es-mx/news/dev/por-que-bel-veth-es-genial/" target="_blank">
+                      <button class="btn_personaje">
+                        <span>Saber Mas</span><i></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article class="row text-center">
+                <div class="col-sm-12">
+                  <article class="noticia_4" data-aos="zoom-in-up" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
+                    <img class="img_noticias mb-2 mt-2" src="../img/noticias/noticia4.jpg" alt="bel´veth a fondo" />
+                    <article class="noticia_4_info">
+                      <h4 class="titulo_secundario text-white">BEL'VETH A FONDO</h4>
+                      <p class="parrafo_secundario text-white">
+                        El Vacío es la antítesis de la vida. Quiere el fin de la
+                        existencia. Quiere la nada misma. Pero Bel'Veth lo quiere
+                        todo...
+                      </p>
+                      <article>
+                        <span class="tiempo_noticia text-white"><i class="bi bi-clock-history"></i> Hace 3 Meses</span>
+                      </article>
+                    </article>
+                  </article>
+                  <div class="d-flex align-item-cente justify-content-center mt-2 mb-2" data-aos="zoom-in-up" data-aos-duration="1000"
+                  data-aos-easing="ease-in-out">
+                    <a href="https://www.leagueoflegends.com/es-mx/news/dev/bel-veth-a-fondo/" target="_blank">
+                      <button class="btn_personaje">
+                        <span>Saber Mas</span><i></i>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </section>
+            </div>
+            <article class="d-flex align-item-cente justify-content-center" data-aos="zoom-in-up"
+              data-aos-duration="1000" data-aos-easing="ease-in-out">
+              <a href="https://www.leagueoflegends.com/es-mx/news/" target="_blank">
+                <button class="btn_personaje mt-2 mb-3">
+                  <span>Mas Noticias</span><i></i>
+                </button>
+              </a>
+            </article>
+            <footer class="container-fluid bg-blur">
+              <section class="row pt-3">
+                <article class="col-sm-12 col-lg-4 footer">
+                  <img src="../img/clasificacionDelJuego.png" alt="clasificación del juego" />
+                  <p class="descripcion_derechos ms-2 text-dark">
+                    Sangre <br />
+                    Violencia de fantasía <br />
+                    Temas insinuantes moderados <br />
+                    Uso de alcohol y tabaco <br />
+                    Interacciones en linea no clasificadas por la ESRB <br />
+                  </p>
+                </article>
+                <article class="col-sm-12 col-lg-8 footer_redes">
+                  <a class="ms-2 me-2" href="https://www.youtube.com/c/LeagueofLegendsLATAM" target="_blank">
+                    <img src="../img/youtubeLogo.png" alt="youtube" id="youtube_icon" />
+                  </a>
+                  <a class="ms-2 me-2" href="https://twitter.com/lol_es/" target="_blank">
+                    <img src="../img/twitterLogo.png" alt="twitter" id="twitter_icon" />
+                  </a>
+                  <a class="ms-2 me-2" href="https://es-la.facebook.com/LeagueofLegendsLatino/" target="_blank">
+                    <img src="../img/facebookLogo.png" alt="facebook" id="facebook_icon" />
+                  </a>
+                  <a class="ms-2 me-2" href="https://www.instagram.com/lol_es/" target="_blank">
+                    <img src="../img/instagramLogo.png" alt="instagram" id="instagram_icon" />
+                  </a>
+                  <a class="ms-2 me-2" href="https://www.reddit.com/r/leagueoflegends/" target="_blank">
+                    <img src="../img/redditLogo.png" alt="reddit" id="reddit_icon" />
+                  </a>
+                </article>
+              </section>
+              <section class="row mt-3">
+                <article class="col-sm-12 col-lg-6 footer_derechos">
+                  <p class="derechos text-dark">© 2022 Riot Games, Inc. Todos los derechos reservados.</p>
+                </article>
+              </section>
+            </footer>
+          </div>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+          crossorigin="anonymous"></script>
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../js/functions.js"></script>
 </body>
 
 </html>

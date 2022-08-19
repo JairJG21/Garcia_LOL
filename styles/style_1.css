@@ -95,6 +95,22 @@
     background-attachment: fixed;
 }
 
+.background_1_noticias {
+    background-image: url(../img/background/background_1_noticias.jpg);
+    background-position: 60% 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background_2_noticias {
+    background-image: url(../img/background/background_2_noticias.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 body#index ul.navbar-nav li:nth-child(1) a,
 body#sobreNosotros ul.navbar-nav li:nth-child(2) a,
 body#personajes ul.navbar-nav li:nth-child(3) a,
@@ -211,6 +227,10 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
     border-radius: 100%;
 }
 
+.img_noticias {
+    padding: 0 10px 0 10px;
+}
+
 .personaje_blur_back {
     background-color: rgba(0, 0, 0, 0.3);
     padding: 10px 15px 10px 15px;
@@ -225,7 +245,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 .personaje_1 {
     background-image: url(../img/personajes/Evelynn.jpg);
     background-size: 100% 100%;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
     border-radius: 20px 0 20px 0;
@@ -235,7 +255,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 .personaje_2 {
     background-image: url(../img/personajes/Blitzcrank.jpg);
     background-size: 100% 100%;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
     border-radius: 20px 0 20px 0;
@@ -245,7 +265,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 .personaje_3 {
     background-image: url(../img/personajes/Heimerdinger.jpg);
     background-size: 100% 100%;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
     border-radius: 20px 0 20px 0;
@@ -255,7 +275,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 .personaje_4 {
     background-image: url(../img/personajes/Twitch.jpg);
     background-size: 100% 100%;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
     border-radius: 20px 0 20px 0;
@@ -265,7 +285,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 .personaje_5 {
     background-image: url(../img/personajes/Neeko.jpg);
     background-size: 100% 100%;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
     border-radius: 20px 0 20px 0;
@@ -275,7 +295,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 .personaje_6 {
     background-image: url(../img/personajes/TahmKench.jpg);
     background-size: 100% 100%;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
     border-radius: 20px 0 20px 0;
@@ -301,33 +321,33 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
     border: none;
     color: #fff;
     font-family: 'Cinzel Decorative', cursive;
-  }
-  
-  .btn_personaje:hover {
+}
+
+.btn_personaje:hover {
     background: #F3BE22;
     color: #F3BE22;
     box-shadow: 0 0 45px #F3BE22;
-  }
-  
-  .btn_personaje::before {
+}
+
+.btn_personaje::before {
     content: '';
     position: absolute;
     inset: 2px;
     background: #222222;
-  }
-  
-  .btn_personaje span {
+}
+
+.btn_personaje span {
     position: relative;
     z-index: 1;
-  }
-  
-  .btn_personaje i {
+}
+
+.btn_personaje i {
     position: absolute;
     inset: 0;
     display: block;
-  }
-  
-  .btn_personaje i::before {
+}
+
+.btn_personaje i::before {
     content: '';
     position: absolute;
     border: 2px solid #F3BE22;
@@ -338,14 +358,14 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
     background: #222222;
     transform: translateX(-50%);
     transition: 0.5s;
-  }
-  
-  .btn_personaje:hover i::before {
+}
+
+.btn_personaje:hover i::before {
     width: 20px;
     left: 20%;
-  }
-  
-  .btn_personaje i::after {
+}
+
+.btn_personaje i::after {
     content: '';
     position: absolute;
     border: 2px solid #F3BE22;
@@ -356,12 +376,33 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
     background: #222222;
     transform: translateX(-50%);
     transition: 0.5s;
-  }
-  
-  .btn_personaje:hover i::after {
+}
+
+.btn_personaje:hover i::after {
     width: 20px;
     left: 80%;
-  }
+}
+
+.img_noticias {
+    width: 40%;
+    border-radius: 100%;
+}
+
+.tiempo_noticia {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.fondo_noticias {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 5px 0 5px 0;
+}
+
+.icon_soporte {
+    font-size: 50px;
+}
 
 @media screen and (min-width: 1024px) {
     .logo {
@@ -420,7 +461,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
     .img-patrocinador {
         width: 70%;
     }
-    
+
     .img_equipo {
         width: 70%;
     }
@@ -435,7 +476,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
     }
 
     .derechos {
-        font-size: 18px; 
+        font-size: 18px;
     }
 
     .footer_redes {
@@ -446,22 +487,22 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
         width: 50px;
         /* height: 37px; */
     }
-    
+
     #twitter_icon {
         width: 50px;
         /* height: 40px; */
     }
-    
+
     #facebook_icon {
         width: 40px;
         /* height: 40px; */
     }
-    
+
     #instagram_icon {
         width: 43px;
         /* height: 41px; */
     }
-    
+
     #reddit_icon {
         width: 43px;
         /* height: 41px; */
