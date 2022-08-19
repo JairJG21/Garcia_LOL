@@ -16,11 +16,13 @@
 
 .icon_menu {
     font-size: 45px;
+    position: absolute;
+    top: 20px;
 }
 
 .logo {
-    margin: 0 32% 0 0;
     order: 2;
+    margin: 0 auto 0 auto;
 }
 
 .btn-close {
