@@ -111,6 +111,22 @@
     background-attachment: fixed;
 }
 
+.background_1_soporte {
+    background-image: url(../img/background/background_1_soporte.png);
+    background-position: 60% 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background_2_soporte {
+    background-image: url(../img/background/background_2_soporte.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 body#index ul.navbar-nav li:nth-child(1) a,
 body#sobreNosotros ul.navbar-nav li:nth-child(2) a,
 body#personajes ul.navbar-nav li:nth-child(3) a,
@@ -310,7 +326,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
     margin: 0 1px 0 1px;
 }
 
-.btn_personaje {
+.btn_general {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     padding: 10px 30px;
@@ -323,31 +339,31 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
     font-family: 'Cinzel Decorative', cursive;
 }
 
-.btn_personaje:hover {
+.btn_general:hover {
     background: #F3BE22;
     color: #F3BE22;
     box-shadow: 0 0 45px #F3BE22;
 }
 
-.btn_personaje::before {
+.btn_general::before {
     content: '';
     position: absolute;
     inset: 2px;
     background: #222222;
 }
 
-.btn_personaje span {
+.btn_general span {
     position: relative;
     z-index: 1;
 }
 
-.btn_personaje i {
+.btn_general i {
     position: absolute;
     inset: 0;
     display: block;
 }
 
-.btn_personaje i::before {
+.btn_general i::before {
     content: '';
     position: absolute;
     border: 2px solid #F3BE22;
@@ -360,12 +376,12 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
     transition: 0.5s;
 }
 
-.btn_personaje:hover i::before {
+.btn_general:hover i::before {
     width: 20px;
     left: 20%;
 }
 
-.btn_personaje i::after {
+.btn_general i::after {
     content: '';
     position: absolute;
     border: 2px solid #F3BE22;
@@ -378,7 +394,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
     transition: 0.5s;
 }
 
-.btn_personaje:hover i::after {
+.btn_general:hover i::after {
     width: 20px;
     left: 80%;
 }
@@ -403,6 +419,36 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 .icon_soporte {
     font-size: 50px;
 }
+
+.span_contacto {
+    font-size: 12px;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.input {
+    border: 2px solid transparent;
+    outline: none;
+    border-bottom: 2px solid #3f3f3f;
+    caret-color: #3f3f3f;
+    background-color: #212121;
+    padding: 5px;
+    transition: .2s linear;
+    font-family: 'Berkshire Swash', cursive;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .input:focus {
+    border: 2px solid #fa4753;
+    border-radius: 10px;
+    caret-color: #fa4753;
+    color: #ffffff;
+    box-shadow: 4px 4px 10px #070707;
+  }
+  
+  .input:focus::placeholder {
+    color: #fa4753;
+  }
 
 @media screen and (min-width: 1024px) {
     .logo {
