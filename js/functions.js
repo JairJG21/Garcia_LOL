@@ -1,4 +1,4 @@
-  AOS.init();
+    AOS.init();
 
     function abrirMenu() {
         $('.navbar ul').css(
