@@ -470,6 +470,26 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
         margin-top: 30px;
     }
 
+    .hr_edit {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .img_valores {
+        width: 80%;
+    }
+
+    .img_personajes {
+        width: 100%;
+    }
+
+    .display_mobile_historia {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     .nav-link {
         font-size: 18px;
         margin: 0 0 0 0;
@@ -561,4 +581,40 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
         margin: 15px 0 0 0;
     }
 
+    .parrafo_secundario {
+        font-size: 20px;
+    }
+
+    .personajes_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .personaje_6 {
+        margin-top: -20px;
+    }
+
+    .img_noticias_principal {
+        width: 70%;
+    }
+
+    .img_noticias {
+        width: 100%;
+    }
+
+    .noticia {
+        padding-right: 100px;
+    }
+
+    .parrafo_secundario {
+        text-align: justify;
+    }
+
+    .tiempo_noticia_content {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
 }
