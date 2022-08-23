@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
 
+/* General Inicio */
 * {
     margin: 0;
     padding: 0;
+}
+
+html {
+    font-size: 10px;
 }
 
 .bg-blur {
@@ -12,38 +17,6 @@
 
 .bg-navbar {
     background-color: rgba(0, 0, 0, 0.8);
-}
-
-.icon_menu {
-    font-size: 45px;
-    position: absolute;
-    top: 20px;
-}
-
-.logo {
-    order: 2;
-    margin: 0 auto 0 auto;
-}
-
-.btn-close {
-    background: transparent url(../img/icon_btn_close.svg) center/1em auto no-repeat;
-}
-
-.nav-link {
-    font-size: 25px;
-    font-family: 'Cinzel Decorative', cursive;
-    transition: none;
-    color: rgb(255, 255, 255);
-    margin: 0 0 30px 0;
-}
-
-.nav-link:hover {
-    text-shadow: #CCC 0 0 10px;
-    color: rgb(255, 215, 0);
-}
-
-.footer-canvas {
-    margin: 70px 0 0 0;
 }
 
 .background_blur {
@@ -129,6 +102,34 @@
     background-attachment: fixed;
 }
 
+.icon_menu {
+    font-size: 45px;
+    position: absolute;
+    top: 20px;
+}
+
+.logo {
+    order: 2;
+    margin: 0 auto 0 auto;
+}
+
+.btn-close {
+    background: transparent url(../img/icon_btn_close.svg) center/1em auto no-repeat;
+}
+
+.nav-link {
+    font-size: 2.5rem;
+    font-family: 'Cinzel Decorative', cursive;
+    transition: none;
+    color: rgb(255, 255, 255);
+    margin: 0 0 30px 0;
+}
+
+.nav-link:hover {
+    text-shadow: #CCC 0 0 10px;
+    color: rgb(255, 215, 0);
+}
+
 body#index ul.navbar-nav li:nth-child(1) a,
 body#sobreNosotros ul.navbar-nav li:nth-child(2) a,
 body#personajes ul.navbar-nav li:nth-child(3) a,
@@ -138,35 +139,8 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
     color: rgb(255, 215, 0);
 }
 
-.titulo_principal {
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 32px;
-}
-
-.parrafo_principal {
-    font-family: 'Berkshire Swash', cursive;
-    font-size: 19px;
-}
-
-.parrafo_secundario {
-    font-family: 'Berkshire Swash', cursive;
-    font-size: 15px;
-}
-
-.titulo_secundario {
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 25px;
-}
-
-.titulo_terciario {
-    font-family: 'Cinzel Decorative', cursive;
-    font-size: 20px;
-}
-
-.row_height {
-    height: 120px;
-    padding-left: 10px;
-    padding-right: 10px;
+.footer-canvas {
+    margin: 70px 0 0 0;
 }
 
 .img-patrocinador {
@@ -174,15 +148,14 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 }
 
 .derechos {
-    font-size: 12px;
+    font-size: 1.2rem;
     font-family: 'Berkshire Swash', cursive;
 }
 
 .descripcion_derechos {
-    font-size: 10px;
+    font-size: 1rem;
     font-family: 'Berkshire Swash', cursive;
 }
-
 
 #youtube_icon {
     width: 40px;
@@ -209,16 +182,55 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
     /* height: 41px; */
 }
 
+.titulo_principal {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 3.2rem;
+}
+
+.titulo_secundario {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 2rem;
+    margin: 1em 0 0 0;
+}
+
+.titulo_terciario {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 1.3rem;
+    margin: 1em 0 0 0;
+}
+
+.parrafo_principal {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 1.8rem;
+}
+
+.parrafo_secundario {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 1em;
+}
+/* General Fin */
+
 .img-caratula {
     width: 70%;
+    margin: 2em;
 }
 
 .img_equipo {
-    width: 75%;
+    width: 80%;
 }
 
 .width_equipo {
     width: 50%;
+    margin: 1em 0 1em 0;
+}
+
+.row_height {
+    height: 120px;
+    padding: 0 1rem 0 1rem;
+}
+
+.img_patrocinador {
+    width: 100px;
 }
 
 .footer {
@@ -334,11 +346,12 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
     padding: 10px 30px;
     transition: 0.2s;
     position: relative;
-    font-size: 14px;
+    font-size: 1.4rem;
     background: #333;
     border: none;
     color: #fff;
     font-family: 'Cinzel Decorative', cursive;
+    margin: 1em;
 }
 
 .btn_general:hover {
@@ -452,7 +465,16 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
     color: #fa4753;
   }
 
+  .btn_noticia {
+    justify-content: center;
+    }
+
 @media screen and (min-width: 1024px) {
+    
+    html {
+        font-size: 13px;
+    }
+
     .logo {
         order: 0;
         display: flex;
@@ -465,37 +487,11 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
         display: none;
     }
 
-    .img-index {
-        width: 80%;
-        margin-top: 30px;
-    }
-
-    .hr_edit {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-
-    .img_valores {
-        width: 80%;
-    }
-
-    .img_personajes {
-        width: 100%;
-    }
-
-    .display_mobile_historia {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
     .nav-link {
-        font-size: 18px;
+        font-size: 1.4rem;
         margin: 0 0 0 0;
-        transition: all 0.2s ease-in;
     }
-
+    
     .offcanvas {
         display: flex;
         align-items: center;
@@ -503,118 +499,107 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
         margin: 0 0 0 400px;
     }
 
+    .img-index {
+        width: 95%;
+    }
+
     .img-caratula {
-        width: 60%;
-    }
-
-    .titulo_principal {
-        font-size: 40px;
-    }
-
-    .titulo_secundario {
-        font-size: 30px;
+        width: 70%;
+        margin: 1.5em;
     }
 
     .parrafo_principal {
-        padding-left: 100px;
-        padding-right: 100px;
-        font-size: 20px;
+        padding: 0 20px 0 20px;
     }
 
     .row_height {
         height: 250px;
-        padding-left: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .img-patrocinador {
-        width: 70%;
+    .img_patrocinador {
+        width: 250px;
+    }
+
+    .titulo_secundario {
+        font-size: 2.5rem;
     }
 
     .img_equipo {
-        width: 70%;
+        width: 90%;
     }
 
     .width_equipo {
-        width: 30%;
+        width: 25%;
     }
 
-    .descripcion_derechos {
-        font-size: 14px;
-        margin: 1px 0 0 0;
+    .footer_derechos {
+        justify-content: start;
     }
 
     .derechos {
-        font-size: 18px;
+        font-size: 1.5rem;
+        font-family: 'Berkshire Swash', cursive;
     }
 
     .footer_redes {
         justify-content: end;
     }
 
-    #youtube_icon {
-        width: 50px;
-        /* height: 37px; */
+    .img_valores {
+        width: 80%;
     }
 
-    #twitter_icon {
-        width: 50px;
-        /* height: 40px; */
-    }
-
-    #facebook_icon {
-        width: 40px;
-        /* height: 40px; */
-    }
-
-    #instagram_icon {
-        width: 43px;
-        /* height: 41px; */
-    }
-
-    #reddit_icon {
-        width: 43px;
-        /* height: 41px; */
-    }
-
-    .footer_derechos {
-        justify-content: start;
-        margin: 15px 0 0 0;
-    }
-
-    .parrafo_secundario {
-        font-size: 20px;
-    }
-
-    .personajes_content {
+    .content_historia {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
     }
 
-    .personaje_6 {
-        margin-top: -20px;
-    }
-
     .img_noticias_principal {
         width: 70%;
     }
 
-    .img_noticias {
-        width: 100%;
-    }
-
     .noticia {
-        padding-right: 100px;
-    }
-
-    .parrafo_secundario {
-        text-align: justify;
-    }
-
-    .tiempo_noticia_content {
         display: flex;
         align-items: center;
+        justify-content: center;
+        
+    }
+
+    .img_noticias {
+        width: 20%;
+    }
+
+    .noticia_1_info {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .noticia_2_info {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .noticia_3_info {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .noticia_4_info {
+        margin-left: 120px;
+        margin-right: 120px;
+    }q
+
+    .img_soporte {
+        width: 90%;
+    }
+
+    .btn_noticia {
         justify-content: end;
     }
+
 }
