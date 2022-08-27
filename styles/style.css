@@ -15,7 +15,13 @@ html {
 
 .background_blur {
     background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(1.5px);
+    /* backdrop-filter: blur(1.5px); */
+    /* -webkit-backdrop-filter: blur(1.5px); */
+}
+
+.bg-navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+
 }
 
 .bg-blur {
@@ -110,10 +116,6 @@ html {
     left: 10px;
 }
 
-.offcanvas-body {
-    vertical-align: middle;
-}
-
 .btn-close {
     background: transparent url(../img/icon_btn_close.svg) center/1.7em auto no-repeat;
 }
@@ -129,6 +131,11 @@ html {
 .nav-link:hover {
     text-shadow: #CCC 0 0 10px;
     color: rgb(255, 215, 0);
+}
+
+.offcanvas {
+    backdrop-filter: none;
+    /* -webkit-backdrop-filter: blur(0px); */
 }
 
 body#index ul.navbar-nav li:nth-child(1) a,
@@ -390,7 +397,9 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 
     /* Footer */
 
-
+    .clasificacion {
+        justify-content: start !important;
+    }
 
     /*  */
 
@@ -427,6 +436,18 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 
     .img_equipo {
         width: 80%;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .img_equipo:hover {
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        padding: 2em;
+        filter: brightness(1.2);
     }
 
     /*  */
@@ -442,7 +463,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 
     .img_valores {
         width: 80%;
+        transition: all 0.2s ease-in-out;
     }
-
     /*  */
 }
