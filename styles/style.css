@@ -26,6 +26,7 @@ html {
     background-image: url(../img/background/background_1_index.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50%;
     background-attachment: fixed;
 }
 
@@ -33,6 +34,7 @@ html {
     background-image: url(../img/background/background_2_index.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 85%;
     background-attachment: fixed;
 }
 
