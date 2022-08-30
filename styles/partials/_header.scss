@@ -1,0 +1,11 @@
+.navbar {
+    @include display(
+                    $direction: row,
+                    $justify: space-between,
+                    $align: center 
+                    );
+}
+
+.logo {
+    order: 1;
+}

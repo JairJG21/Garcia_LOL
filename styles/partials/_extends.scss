@@ -1,0 +1,20 @@
+// Variables //
+
+$background_color: rgba(0, 0, 0, 0.5);
+
+// --------- //
+
+%background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+%background_blur {
+    background-color: $background_color;
+    backdrop-filter: blur(1.5px);
+}
+
+%social_icons {
+    width: 32px;
+}

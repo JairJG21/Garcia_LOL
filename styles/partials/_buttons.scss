@@ -1,0 +1,7 @@
+.btn_general {
+    @include btn_general(
+        $padding_Y: 1em, 
+        $padding_X: 1.5em, 
+        $sizeFont: 17px
+    );
+}

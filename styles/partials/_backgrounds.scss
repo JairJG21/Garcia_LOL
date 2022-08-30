@@ -1,0 +1,59 @@
+@import "../partials/maps";
+
+.background_blur {
+    @extend %background_blur;
+}
+
+.background_1_index {
+    background-image: url(../img/background/background_1_index.jpg);
+    @extend %background;
+}
+
+.background_2_index {
+    background-image: url(../img/background/background_2_index.jpeg);
+    @extend %background;
+}
+
+.background_1_sobreNosotros {
+    background-image: url(../img/background/background_1_sobreNosotros.jpg);
+    @extend %background;
+}
+
+.background_2_sobreNosotros {
+    background-image: url(../img/background/background_2_sobreNosotros.jpg);
+    @extend %background;
+}
+
+.background_1_personajes {
+    background-image: url(../img/background/background_1_personajes.jpg);
+    @extend %background;
+}
+
+.background_2_personajes {
+    background-image: url(../img/background/background_2_personajes.jpg);
+    @extend %background;
+}
+
+.background_1_noticias {
+    background-image: url(../img/background/background_1_noticias.jpg);
+    @extend %background;
+}
+
+.background_2_noticias {
+    background-image: url(../img/background/background_2_noticias.jpg);
+    @extend %background;
+}
+
+.background_1_soporte {
+    background-image: url(../img/background/background_1_soporte.png);
+    @extend %background;
+}
+
+.background_2_soporte {
+    background-image: url(../img/background/background_2_soporte.jpg);
+    @extend %background;
+}
+
+.background_carousel {
+    background-color: map-get($style_carousel, background_color_carousel);
+}

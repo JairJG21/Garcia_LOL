@@ -1,0 +1,7 @@
+.d-center {
+    @include display(
+        $direction: column, 
+        $justify: center, 
+        $align: center
+    );
+}
