@@ -5,3 +5,27 @@
         $align: center
     );
 }
+
+.d-equipos {
+    @include display(
+        $direction: row,
+        $justify: center,
+        $align: center
+    );
+    flex-wrap: wrap;
+        .width_equipo {
+            @include display(
+                $direction: column,
+                $justify: center,
+                $align: center
+            );
+            width: 50%;
+            margin: 1em 0 1em 0;
+        }
+}
+
+@media (min-width: 1024px) {
+    .width_equipo {
+        width: 25% !important;
+    }
+}

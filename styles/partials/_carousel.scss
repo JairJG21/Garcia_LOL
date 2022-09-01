@@ -1,0 +1,13 @@
+.carousel {
+    background-color: map-get($style_carousel, background_color_carousel);
+    .img-patrocinador {
+        width: map-get($style_carousel, width_img_carousel);
+        padding: map-get($style_carousel, padding_carousel);
+    }
+}
+
+@media (min-width: 1024px) {
+    .img-patrocinador {
+        width: map-get($style_carousel, width_img_carousel_desktop) !important;
+    }
+}

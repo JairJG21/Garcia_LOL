@@ -1,11 +1,93 @@
-.navbar {
-    @include display(
-                    $direction: row,
-                    $justify: space-between,
-                    $align: center 
-                    );
-}
-
 .logo {
     order: 1;
+    margin: 0 auto 0 auto;
+}
+
+.icon_menu {
+    font-size: 45px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.btn-close {
+    background: transparent url(../img/icon_btn_close.svg) center/1em auto no-repeat;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav {
+    @include display (
+        $direction: column,
+        $justify: center,
+        $align: center
+    );
+}
+
+.footer-canvas {
+    @include display (
+        $direction: row,
+        $justify: space-evenly,
+        $align: center
+    );
+        .social_icons_sub {
+            width: 40px;
+        }
+}
+
+.nav-link {
+    font-size: 37px;
+    font-family: fronte_script;
+    transition: none;
+    color: rgb(255, 255, 255);
+    margin: 0 0 30px 0;
+    letter-spacing: 4px;
+        &:hover {
+            text-shadow: #CCC 0 0 10px;
+            color: rgb(255, 215, 0);        
+        }
+}
+
+body#index ul.navbar-nav li:nth-child(1) a,
+body#sobreNosotros ul.navbar-nav li:nth-child(2) a,
+body#personajes ul.navbar-nav li:nth-child(3) a,
+body#noticias ul.navbar-nav li:nth-child(4) a,
+body#soporte ul.navbar-nav li:nth-child(5) a {
+    text-shadow: #CCC 0 0 10px;
+    color: rgb(255, 215, 0);
+}
+
+@media (min-width: 1024px) {
+
+    .logo {
+        order: 0;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .footer-canvas {
+        display: none;
+    }
+
+    .offcanvas {
+        @include display (
+            $direction: row,
+            $justify: end,
+            $align: center
+        );
+        margin: 0 0 0 400px;
+    }
+    
+    .navbar-nav {
+        @include display (
+            $direction: row,
+            $justify: end,
+            $align: center
+        );
+    }
 }

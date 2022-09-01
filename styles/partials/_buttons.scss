@@ -5,3 +5,13 @@
         $sizeFont: 17px
     );
 }
+
+@media (min-width: 1024px) {
+    .btn_general {
+        @include btn_general(
+            $padding_Y: 1em, 
+            $padding_X: 1.5em, 
+            $sizeFont: 13px
+        );
+    }   
+}

@@ -9,6 +9,25 @@ $white_color: rgb(255, 255, 255);
     );
 }
 
+.titulo_secundario {
+    @include texto(
+        $font: fronte_script,
+        $size: 30px,
+        $color: $white_color,
+        $align: center
+    );
+}
+
+.titulo_terciario {
+    @include texto(
+        $font: bluetea,
+        $size: 20px,
+        $color: $white_color,
+        $align: center
+    );
+    margin: 0 1em 0 1em;
+}
+
 .parrafo_principal {
     @include texto(
         $font: bluetea,

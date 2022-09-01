@@ -1,0 +1,19 @@
+.img_equipo {
+    width: 80%;
+    margin: 0 0 1em 0;
+}
+
+.img_descripcion {
+    border-radius: 20px;
+    width: 80%;
+}
+
+@media (min-width: 1024px) {
+    .img-index {
+        width: 90%;
+    }
+
+    .img_equipo {
+        width: 70% !important;
+    }
+}

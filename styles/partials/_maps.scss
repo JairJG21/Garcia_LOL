@@ -1,4 +1,10 @@
 $style_carousel: (
     background_color_carousel: rgba(255,255,255,0.5),
-    width_img_carousel: 30px
-)
+    width_img_carousel: 160px,
+    width_img_carousel_desktop: 300px,
+    padding_carousel: 2em 2em 2em 2em 
+);
+
+$style_background : (
+    background_blur: rgba(0,0,0,0.5)
+);
