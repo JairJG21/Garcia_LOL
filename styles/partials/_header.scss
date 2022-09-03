@@ -74,19 +74,14 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
         display: none;
     }
 
-    .offcanvas {
-        @include display (
-            $direction: row,
-            $justify: end,
-            $align: center
-        );
-        margin: 0 0 0 400px;
+    .icons_social_menu {
+        display: none;
     }
-    
-    .navbar-nav {
-        @include display (
+
+    .navbar {
+        @include display(
             $direction: row,
-            $justify: end,
+            $justify: center,
             $align: center
         );
     }
