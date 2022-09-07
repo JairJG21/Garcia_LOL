@@ -6,115 +6,109 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
-  <!-- Bootstrap CSS -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
   <!-- Estilo Custom -->
   <link rel="stylesheet" href="./styles/main.css" />
   <!-- Iconos -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
   <!-- AOS CSS-->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-
+  <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
+  <!-- vid -->
+  <link href="/node_modules/vidbg.js/dist/vidbg.css" rel="stylesheet" type="text/css" />
   <title>League Of Legends</title>
 </head>
 
 <body id="index">
-  <div class="header-video">
-    <video class="video_index"
-      src="https://assets.mixkit.co/videos/preview/mixkit-hands-of-a-man-playing-on-a-computer-43527-large.mp4" autoplay
-      loop></video>
-  </div>
-  <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg">
-      <article class="logo">
-        <a class="navbar-brand" href="#">
-          <img src="./img/logo.png" alt="Logo" width="70px" />
-        </a>
-      </article>
-      <button class="navbar-toggler icon_menu p-1" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-        <i class="bi bi-list text-white"></i>
-      </button>
-      <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <img src="./img/logo.png" alt="Logo" width="70" />
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./pages/sobreNosotros.html">Sobre Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./pages/personajes.html">Personajes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./pages/noticias.html">Noticias</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./pages/soporte.html">Soporte</a>
-            </li>
-          </ul>
-          <div class="container-fluid icons_social_menu">
-            <section class="row">
-              <article class="col-12 col-sm-12 footer-canvas">
-                <a href="https://www.youtube.com/c/LeagueofLegendsLATAM" target="_blank">
-                  <img class="social_icons_sub" src="../img/youtubeLogo.png" alt="youtube" id="youtube_icon" />
-                </a>
-                <a href="https://twitter.com/lol_es/" target="_blank">
-                  <img class="social_icons_sub" src="../img/twitterLogo.png" alt="twitter" id="twitter_icon" />
-                </a>
-                <a href="https://es-la.facebook.com/LeagueofLegendsLatino/" target="_blank">
-                  <img class="social_icons_sub" src="../img/facebookLogo.png" alt="facebook" id="facebook_icon" />
-                </a>
-                <a href="https://www.instagram.com/lol_es/" target="_blank">
-                  <img class="social_icons_sub" src="../img/instagramLogo.png" alt="instagram" id="instagram_icon" />
-                </a>
-                <a href="https://www.reddit.com/r/leagueoflegends/" target="_blank">
-                  <img class="social_icons_sub" src="../img/redditLogo.png" alt="reddit" id="reddit_icon" />
-                </a>
-              </article>
-            </section>
+  <div class="contenedor_principal background_0_index">
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <article class="logo">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" alt="Logo" width="70px" />
+          </a>
+        </article>
+        <button class="navbar-toggler icon_menu p-1" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <i class="bi bi-list text-white"></i>
+        </button>
+        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <img src="./img/logo.png" alt="Logo" width="70" />
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./pages/sobreNosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./pages/personajes.html">Personajes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./pages/noticias.html">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./pages/soporte.html">Soporte</a>
+              </li>
+            </ul>
+            <div class="container-fluid icons_social_menu">
+              <section class="row">
+                <article class="col-12 col-sm-12 footer-canvas">
+                  <a href="https://www.youtube.com/c/LeagueofLegendsLATAM" target="_blank">
+                    <img class="social_icons_sub" src="../img/youtubeLogo.png" alt="youtube" id="youtube_icon" />
+                  </a>
+                  <a href="https://twitter.com/lol_es/" target="_blank">
+                    <img class="social_icons_sub" src="../img/twitterLogo.png" alt="twitter" id="twitter_icon" />
+                  </a>
+                  <a href="https://es-la.facebook.com/LeagueofLegendsLatino/" target="_blank">
+                    <img class="social_icons_sub" src="../img/facebookLogo.png" alt="facebook" id="facebook_icon" />
+                  </a>
+                  <a href="https://www.instagram.com/lol_es/" target="_blank">
+                    <img class="social_icons_sub" src="../img/instagramLogo.png" alt="instagram" id="instagram_icon" />
+                  </a>
+                  <a href="https://www.reddit.com/r/leagueoflegends/" target="_blank">
+                    <img class="social_icons_sub" src="../img/redditLogo.png" alt="reddit" id="reddit_icon" />
+                  </a>
+                </article>
+              </section>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-  </header>
-  <section class="container-fluid" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
-    <article class="row">
-      <div class="col-12 col-sm-12 col-lg-12 d-flex align-items-center justify-content-center">
-        <img class="img-fluid img-index" src="./img/index/logoDeLeagueOfLegends.png" alt="Logo de league of legends" />
-      </div>
-    </article>
-  </section>
+      </nav>
+    </header>
+
+    <section class="container-fluid" data-aos="zoom-in">
+      <article class="row">
+        <div class="heigth_img col-12 col-sm-12 col-lg-12 d-flex align-items-center justify-content-center">
+          <img class="img-fluid img-index" src="./img/index/logoDeLeagueOfLegends.png"
+            alt="Logo de league of legends" />
+        </div>
+      </article>
+    </section>
+  </div>
   <div class="background_1_index">
     <div class="background_blur">
       <section class="container-fluid">
         <article class="row">
-          <div class="d-center col-12 col-sm-12 col-lg-8" data-aos="zoom-in" data-aos-duration="1000"
-            data-aos-easing="ease-in-out">
-            <h1 class="titulo_principal">¿QUÉ ES LEAGUE OF LEGENDS?</h1>
-            <p class="parrafo_principal">
+          <div class="d-center col-12 col-sm-12 col-lg-8 mt-2">
+            <h1 class="titulo_principal" data-aos="zoom-out">¿QUÉ ES LEAGUE OF LEGENDS?</h1>
+            <p class="parrafo_principal" data-aos="zoom-out">
               League of Legends es un juego de estrategia por equipos en el que
               dos equipos conformados por cinco poderosos campeones se enfrentan
               para destruir la base del otro. Elige de entre más de 140 campeones
               para realizar jugadas épicas, asegurar asesinatos y destruir
               torretas mientras avanzas hacia la victoria.
             </p>
-            <a href="https://www.leagueoflegends.com/es-mx/" target="_blank">
+            <a data-aos="zoom-out" href="https://www.leagueoflegends.com/es-mx/" target="_blank">
               <button class="btn_general">
                 <span>Mas Información</span><i></i>
               </button>
             </a>
           </div>
-          <div class="col-12 col-sm-12 col-lg-4 d-flex justify-content-center align-items-center" data-aos="zoom-in"
-            data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <div class="col-12 col-sm-12 col-lg-4 d-flex justify-content-center align-items-center">
             <img class="img-fluid img_descripcion" src="./img/index/caratulaDeLeagueOfLegends.jpg"
               alt="Caratula de league of legends" />
           </div>
@@ -176,7 +170,7 @@
       <section class="container-fluid">
         <article class="row">
           <div class="col-12 col-sm-12 col-lg-12 d-flex align-items-center justify-content-center flex-column mt-3"
-            data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
+            data-aos="zoom-in">
             <h2 class="titulo_secundario text-white">EQUIPOS PROFESIONALES</h2>
             <hr class="border rounded mt-1 order-1 opacity-100 w-100" />
           </div>
@@ -267,13 +261,14 @@
   <!-- Bootstrap JS -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/node_modules/aos/dist/aos.js"></script>
+  <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Script Default -->
   <script src="./js/functions.js"></script>
-
-  <!-- <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script> -->
+  <!-- vid -->
+  <script src="/node_modules/vidbg.js/dist/vidbg.js"></script>
 
 </body>
-</script>
 
 </html>

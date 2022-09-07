@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/bl4ck-00/Garcia_LOL#readme",
   "dependencies": {
-    "bootstrap": "^5.2.0"
+    "aos": "^2.3.4",
+    "bootstrap": "^5.2.0",
+    "vidbg.js": "^2.1.0"
   }
 }

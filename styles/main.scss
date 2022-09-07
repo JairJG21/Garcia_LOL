@@ -18,14 +18,6 @@
         padding: 0;
     }
 
-    .video_index {
-        position: absolute;
-    }
-
-    .header-video {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100vh;
-        overflow-y: hidden;
+    body, html {
+        height:100%;
     }

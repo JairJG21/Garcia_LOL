@@ -3,7 +3,7 @@ $white_color: rgb(255, 255, 255);
 .titulo_principal {
     @include texto(
         $font: fronte_script,
-        $size: 35px,
+        $size: 32px,
         $color: $white_color,
         $align: center
     );
@@ -31,7 +31,7 @@ $white_color: rgb(255, 255, 255);
 .parrafo_principal {
     @include texto(
         $font: bluetea,
-        $size: 20px,
+        $size: 15px,
         $color: $white_color,
         $align: center
     );

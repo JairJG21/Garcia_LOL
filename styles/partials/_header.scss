@@ -14,6 +14,12 @@
     background: transparent url(../img/icon_btn_close.svg) center/1em auto no-repeat;
 }
 
+.header {
+    position: sticky;
+    top: 0; 
+    z-index: 99999;
+}
+
 .navbar {
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -63,6 +69,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 
     .logo {
         order: 0;
+        margin: 0 0 0 100px;
     }
 
     .nav-link {
@@ -78,7 +85,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
         display: none;
     }
 
-    .navbar {
+    .offcanvas-body {
         @include display(
             $direction: row,
             $justify: center,
