@@ -50,6 +50,15 @@
         );
     }
 
+    .footer_clasificacion {
+        @include display (
+            $direction: row,
+            $justify: start,
+            $align: center
+        );
+    
+    }
+
     .derechos_content {
         @include texto (
             $font: bluetea,

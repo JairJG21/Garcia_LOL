@@ -5,93 +5,95 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO -->
+
+  <meta name="description" content="Campeones de League Of Legends">
+  <meta name="keywords" content="League Of Legends, campeones, jugadores, personajes">
+
+  <!-- --- -->
   <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <!-- Estilo Custom -->
-  <link rel="stylesheet" href="../styles/style_1.css" />
+  <link rel="stylesheet" href="../styles/main.css" />
   <!-- Iconos -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
   <!-- AOS CSS-->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <title>League Of Legends</title>
+  <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
+  <!-- vid -->
+  <link href="/node_modules/vidbg.js/dist/vidbg.css" rel="stylesheet" type="text/css" />
+  <title>Campeones de League Of Legends</title>
 </head>
 
 <body id="personajes">
-  <div class="background_1_personajes">
-    <div class="background_blur">
-      <header class="sticky-top bg-navbar">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <article class="logo">
-              <a class="navbar-brand" href="#">
-                <img src="../img/logo.png" alt="Logo" width="70" />
-              </a>
-            </article>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar">
-              <i class="bi bi-list text-white icon_menu"></i>
-            </button>
-            <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <img src="../img/logo.png" alt="Logo" width="70" />
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav d-flex align-items-center justify-content-center">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./sobreNosotros.html">Sobre Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./personajes.html">Personajes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./noticias.html">Noticias</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./soporte.html">Soporte</a>
-                  </li>
-                </ul>
-                <div class="container-fluid footer-canvas">
-                  <section class="row">
-                    <article class="col-sm-12 d-flex align-items-center justify-content-evenly">
-                      <a href="https://www.youtube.com/c/LeagueofLegendsLATAM" target="_blank">
-                        <img src="../img/youtubeLogo.png" alt="youtube" id="youtube_icon" />
-                      </a>
-                      <a href="https://twitter.com/lol_es/" target="_blank">
-                        <img src="../img/twitterLogo.png" alt="twitter" id="twitter_icon" />
-                      </a>
-                      <a href="https://es-la.facebook.com/LeagueofLegendsLatino/" target="_blank">
-                        <img src="../img/facebookLogo.png" alt="facebook" id="facebook_icon" />
-                      </a>
-                      <a href="https://www.instagram.com/lol_es/" target="_blank">
-                        <img src="../img/instagramLogo.png" alt="instagram" id="instagram_icon" />
-                      </a>
-                      <a href="https://www.reddit.com/r/leagueoflegends/" target="_blank">
-                        <img src="../img/redditLogo.png" alt="reddit" id="reddit_icon" />
-                      </a>
-                    </article>
-                  </section>
-                </div>
-              </div>
+  <div class="contenedor_principal background_0_personajes">
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <article class="logo">
+          <a class="navbar-brand" href="#">
+            <img src="../img/logo.png" alt="Logo" width="70px" />
+          </a>
+        </article>
+        <button class="navbar-toggler icon_menu p-1" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <i class="bi bi-list text-white"></i>
+        </button>
+        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <img src="../img/logo.png" alt="Logo" width="70" />
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/sobreNosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/personajes.html">Personajes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/noticias.html">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/soporte.html">Soporte</a>
+              </li>
+            </ul>
+            <div class="container-fluid icons_social_menu">
+              <section class="row">
+                <article class="col-12 col-sm-12 footer-canvas">
+                  <a href="https://www.youtube.com/c/LeagueofLegendsLATAM" target="_blank">
+                    <img class="social_icons_sub" src="../img/youtubeLogo.png" alt="youtube" id="youtube_icon" />
+                  </a>
+                  <a href="https://twitter.com/lol_es/" target="_blank">
+                    <img class="social_icons_sub" src="../img/twitterLogo.png" alt="twitter" id="twitter_icon" />
+                  </a>
+                  <a href="https://es-la.facebook.com/LeagueofLegendsLatino/" target="_blank">
+                    <img class="social_icons_sub" src="../img/facebookLogo.png" alt="facebook" id="facebook_icon" />
+                  </a>
+                  <a href="https://www.instagram.com/lol_es/" target="_blank">
+                    <img class="social_icons_sub" src="../img/instagramLogo.png" alt="instagram" id="instagram_icon" />
+                  </a>
+                  <a href="https://www.reddit.com/r/leagueoflegends/" target="_blank">
+                    <img class="social_icons_sub" src="../img/redditLogo.png" alt="reddit" id="reddit_icon" />
+                  </a>
+                </article>
+              </section>
             </div>
           </div>
-        </nav>
-      </header>
-      <section class="container-fluid" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-        <article class="row d-flex align-items-center justify-content-center">
-          <div class="col-sm-12 col-lg-12 ps-0 pe-0">
-            <img class="img-fluid img_personajes" src="../img/personajes/personajes.png"
-              alt="personajes de league of legends" />
-          </div>
-        </article>
-      </section>
-    </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="container-fluid" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+      <article class="row">
+        <div class="heigth_img col-12 col-sm-12 col-lg-12 d-flex align-items-center justify-content-center">
+          <img class="img-fluid img_personajes" src="../img/personajes/personajes.png"
+            alt="personajes de league of legends" />
+        </div>
+      </article>
+    </section>
   </div>
   <div class="background_2_personajes">
     <div class="background_blur">
@@ -100,9 +102,9 @@
           <div class="col-sm-12 col-lg-12 mt-2">
             <h1 class="titulo_secundario text-white">CAMPEONES</h1>
             <hr class="border rounded mt-1 order-1 opacity-100 hr_edit" />
-            <p class="parrafo_secundario text-white">
+            <p class="parrafo_principal mb-2">
               Con más de 140 campeones, encontrarás el que se ajuste perfectamente a
-              tu estilo de juego. <br /> Domina a uno o domínalos a todos.
+              tu estilo de juego. Domina a uno o domínalos a todos.
             </p>
           </div>
         </article>
@@ -112,9 +114,9 @@
           <div class="col-sm-12 col-lg-4">
             <article class="personaje_1" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
               <div class="personaje_blur_back">
-                <span class="span_personajes text-white">ABRAZO DE LA AGONÍA</span>
-                <h2 class="titulo_secundario text-white">EVELYN</h2>
-                <p class="parrafo_secundario text-white text-center">
+                <span class="span_personajes">ABRAZO DE LA AGONÍA</span>
+                <h2 class="titulo_secundario">EVELYN</h2>
+                <p class="parrafo_secundario">
                   Dentro de las oscuras vetas de Runaterra, la demonio Evelynn acecha a
                   su siguiente víctima. Seduce a su presa con la apariencia voluptuosa
                   de una mujer humana, pero una vez que alguien sucumbe ante sus
@@ -240,18 +242,19 @@
           </div>
         </article>
       </section>
-      <article class="d-flex align-item-center justify-content-center" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+      <article class="d-flex align-item-center justify-content-center" data-aos="zoom-in-up" data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
         <a href="https://www.leagueoflegends.com/es-mx/champions/" target="_blank">
           <button class="btn_general mt-4 mb-4">
             <span>Mas Campeones</span><i></i>
           </button>
         </a>
       </article>
-      <footer class="container-fluid bg-blur">
-        <section class="row pt-2">
-          <article class="col-sm-12 col-lg-4 footer">
+      <footer class="container-fluid footer">
+        <section class="row pt-3">
+          <article class="col-12 col-sm-12 col-lg-5 footer_clasificacion">
             <img src="../img/clasificacionDelJuego.png" alt="clasificación del juego" />
-            <p class="descripcion_derechos ms-2 pt-3 text-dark">
+            <p class="descripcion_derechos ms-2 pt-3">
               Sangre <br />
               Violencia de fantasía <br />
               Temas insinuantes moderados <br />
@@ -259,40 +262,61 @@
               Interacciones en linea no clasificadas por la ESRB <br />
             </p>
           </article>
-          <article class="col-sm-12 col-lg-8 footer_redes">
+          <article class="col-12 col-sm-12 col-lg-7 social">
             <a class="ms-2 me-2" href="https://www.youtube.com/c/LeagueofLegendsLATAM" target="_blank">
-              <img src="../img/youtubeLogo.png" alt="youtube" id="youtube_icon" />
+              <img class="social_icons" src="../img/youtubeLogo.png" alt="youtube" id="youtube_icon" />
             </a>
             <a class="ms-2 me-2" href="https://twitter.com/lol_es/" target="_blank">
-              <img src="../img/twitterLogo.png" alt="twitter" id="twitter_icon" />
+              <img class="social_icons" src="../img/twitterLogo.png" alt="twitter" id="twitter_icon" />
             </a>
             <a class="ms-2 me-2" href="https://es-la.facebook.com/LeagueofLegendsLatino/" target="_blank">
-              <img src="../img/facebookLogo.png" alt="facebook" id="facebook_icon" />
+              <img class="social_icons" src="../img/facebookLogo.png" alt="facebook" id="facebook_icon" />
             </a>
             <a class="ms-2 me-2" href="https://www.instagram.com/lol_es/" target="_blank">
-              <img src="../img/instagramLogo.png" alt="instagram" id="instagram_icon" />
+              <img class="social_icons" src="../img/instagramLogo.png" alt="instagram" id="instagram_icon" />
             </a>
             <a class="ms-2 me-2" href="https://www.reddit.com/r/leagueoflegends/" target="_blank">
-              <img src="../img/redditLogo.png" alt="reddit" id="reddit_icon" />
+              <img class="social_icons" src="../img/redditLogo.png" alt="reddit" id="reddit_icon" />
             </a>
           </article>
         </section>
-        <section class="row mt-3">
-          <article class="col-sm-12 col-lg-12 footer_derechos">
-            <p class="derechos text-dark">© 2022 Riot Games, Inc. Todos los derechos reservados.</p>
+        <section class="row mt-3 derechos_content">
+          <article class="col-12 col-sm-12 col-lg-12">
+            <p>© 2022 Riot Games, Inc. Todos los derechos reservados.</p>
           </article>
         </section>
       </footer>
     </div>
   </div>
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/node_modules/aos/dist/aos.js"></script>
+  <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Script Default -->
   <script src="../js/functions.js"></script>
+  <!-- vid -->
+  <script src="/node_modules/vidbg.js/dist/vidbg.js"></script>
+
+  <script>
+    var personajes = new vidbg(
+      ".background_0_personajes",
+      {
+        mp4: "https://assets.mixkit.co/videos/preview/mixkit-several-gamers-playing-on-computers-43541-large.mp4",
+        overlay: true,
+        overlayColor: "#000",
+        overlayAlpha: 0.7
+      },
+      {
+        autoplay: true,
+        controls: false,
+        loop: true,
+        muted: true,
+        playsInline: true,
+      }
+    );
+  </script>
 </body>
 
 </html>

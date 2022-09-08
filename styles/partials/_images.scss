@@ -8,9 +8,69 @@
     width: 80%;
 }
 
+.img_valores {
+    border-radius: 100%;
+    width: 70%;
+}
+
+.img_noticias_principal {
+    width: 80%;
+}
+
+.img_noticias {
+    width: 70%;
+    border-radius: 80%;
+}
+
+.icon_chat {
+    @extend %icon_soporte;
+    top: 72px;
+}
+
+.icon_correo {
+    @extend %icon_soporte;
+    top: 297px;
+}
+
 @media (min-width: 1024px) {
     
     .img_equipo {
         width: 70% !important;
+    }
+
+    .img_descripcion {
+        width: 70%;
+        margin: 15px 0 0 0;
+    }
+
+    .img_sobreNosotros {
+        width: 80%;
+    }
+
+    .valores {
+        width: 25%;
+    }
+
+    .img_valores {
+        width: 80%;
+    }
+
+    .img_noticias_principal {
+        width: 60%;
+    }
+
+    .img_noticias {
+        width: 30%;
+        border-radius: 10px 50px;
+    }
+
+    .icon_chat {
+        top: 80px;
+        left: 200px;
+    }
+    
+    .icon_correo {
+        top: 275px;
+        left: 200px;
     }
 }

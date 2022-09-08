@@ -10781,7 +10781,7 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .navbar-nav {
@@ -10801,17 +10801,24 @@ textarea.form-control-lg {
   width: 40px;
 }
 
+.offcanvas-body {
+  padding: 0;
+}
+
 .nav-link {
-  font-size: 37px;
+  font-size: 32px;
   font-family: fronte_script;
   transition: none;
   color: rgb(255, 255, 255);
-  margin: 0 0 30px 0;
   letter-spacing: 4px;
 }
 .nav-link:hover {
   text-shadow: #CCC 0 0 10px;
   color: rgb(255, 215, 0);
+}
+
+.icons_social_menu {
+  margin: 25px 0 0 0;
 }
 
 body#index ul.navbar-nav li:nth-child(1) a,
@@ -10826,7 +10833,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 @media (min-width: 1024px) {
   .logo {
     order: 0;
-    margin: 0 0 0 100px;
+    margin: 0 0 0 150px;
   }
   .nav-link {
     font-size: 20px;
@@ -10841,8 +10848,9 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
   .offcanvas-body {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+    margin: 0 30px 0 0;
   }
 }
 .background_1_index {
@@ -10887,7 +10895,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 }
 
 .background_carousel {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .background_1_index, .background_2_index, .background_1_sobreNosotros, .background_2_sobreNosotros, .background_1_personajes, .background_2_personajes, .background_1_noticias, .background_2_noticias, .background_1_soporte, .background_2_soporte {
@@ -10899,12 +10907,29 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 }
 
 .background_blur {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(1.5px);
 }
 
 .social_icons {
   width: 32px;
+}
+
+.personaje_6, .personaje_5, .personaje_4, .personaje_3, .personaje_2, .personaje_1 {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 20px 0 20px 0;
+  margin: 0 0 20px 0;
+}
+
+.icon_correo, .icon_chat {
+  font-size: 30px;
+  color: rgb(255, 215, 0);
+  text-shadow: 0 0 7px rgb(255, 215, 0);
+  position: absolute;
+  left: 50px;
 }
 
 @font-face {
@@ -10920,6 +10945,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
   font-size: 32px;
   color: rgb(255, 255, 255);
   text-align: center;
+  margin-bottom: 0 !important;
 }
 
 .titulo_secundario {
@@ -10944,6 +10970,56 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
   text-align: center;
 }
 
+.parrafo_secundario {
+  font-family: bluetea;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.span_personajes {
+  font-family: bluetea;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  text-align: start;
+}
+
+.tiempo_noticia {
+  font-family: bluetea;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.span_contacto {
+  font-family: bluetea;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  text-align: start;
+}
+
+@media screen and (min-width: 1024px) {
+  .titulo_principal {
+    font-family: fronte_script;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 30px !important;
+  }
+  .parrafo_principal {
+    font-family: bluetea;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0 50px 0 50px;
+  }
+  .titulo_secundario {
+    font-family: fronte_script;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+}
 .footer_clasificacion {
   display: flex;
   flex-direction: row;
@@ -10981,6 +11057,12 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
     display: flex;
     flex-direction: row;
     justify-content: end;
+    align-items: center;
+  }
+  .footer_clasificacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
     align-items: center;
   }
   .derechos_content {
@@ -11063,7 +11145,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
     padding: 1em 1.5em;
     transition: 0.2s;
     position: relative;
-    font-size: 13px;
+    font-size: 15px;
     background: #333;
     border: none;
     color: #fff;
@@ -11150,9 +11232,16 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
   .width_equipo {
     width: 25% !important;
   }
+  .content_historia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 .carousel {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .carousel .img-patrocinador {
   width: 160px;
@@ -11161,7 +11250,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 
 @media (min-width: 1024px) {
   .img-patrocinador {
-    width: 300px !important;
+    width: 350px !important;
   }
 }
 .img_equipo {
@@ -11174,11 +11263,122 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
   width: 80%;
 }
 
+.img_valores {
+  border-radius: 100%;
+  width: 70%;
+}
+
+.img_noticias_principal {
+  width: 80%;
+}
+
+.img_noticias {
+  width: 70%;
+  border-radius: 80%;
+}
+
+.icon_chat {
+  top: 72px;
+}
+
+.icon_correo {
+  top: 297px;
+}
+
 @media (min-width: 1024px) {
   .img_equipo {
     width: 70% !important;
   }
+  .img_descripcion {
+    width: 70%;
+    margin: 15px 0 0 0;
+  }
+  .img_sobreNosotros {
+    width: 80%;
+  }
+  .valores {
+    width: 25%;
+  }
+  .img_valores {
+    width: 80%;
+  }
+  .img_noticias_principal {
+    width: 60%;
+  }
+  .img_noticias {
+    width: 30%;
+    border-radius: 10px 50px;
+  }
+  .icon_chat {
+    top: 80px;
+    left: 200px;
+  }
+  .icon_correo {
+    top: 275px;
+    left: 200px;
+  }
 }
+.personajes_content {
+  margin: 0 10px 0 10px;
+}
+
+.personaje_blur_back {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 15px 10px 15px;
+  border-radius: 20px 0 20px 0;
+  transition: all 0.2s linear;
+}
+.personaje_blur_back:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.personaje_1 {
+  background-image: url(../img/personajes/Evelynn.jpg);
+}
+
+.personaje_2 {
+  background-image: url(../img/personajes/Blitzcrank.jpg);
+}
+
+.personaje_3 {
+  background-image: url(../img/personajes/Heimerdinger.jpg);
+}
+
+.personaje_4 {
+  background-image: url(../img/personajes/Twitch.jpg);
+}
+
+.personaje_5 {
+  background-image: url(../img/personajes/Neeko.jpg);
+}
+
+.personaje_6 {
+  background-image: url(../img/personajes/TahmKench.jpg);
+}
+
+.input {
+  border: 2px solid transparent;
+  outline: none;
+  border-bottom: 2px solid #3f3f3f;
+  caret-color: #3f3f3f;
+  background-color: #212121;
+  padding: 5px;
+  transition: 0.5s linear;
+  font-family: bluetea;
+  letter-spacing: 1px;
+}
+
+.input:focus {
+  border: 2px solid #fa4753;
+  caret-color: #fa4753;
+  color: #fa4753;
+  box-shadow: 4px 4px 10px #070707;
+}
+
+.input:focus::placeholder {
+  color: #fa4753;
+}
+
 * {
   margin: 0;
   padding: 0;

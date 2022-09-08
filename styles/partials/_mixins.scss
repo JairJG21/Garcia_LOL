@@ -79,3 +79,7 @@
                     }
             }
 }
+
+@mixin personaje_img($url){
+    background-image: url($url);
+}

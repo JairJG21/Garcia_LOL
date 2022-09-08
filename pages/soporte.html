@@ -5,93 +5,95 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO -->
+
+  <meta name="description" content="Soporte para League Of Legends">
+  <meta name="keywords" content="League Of Legends, como jugar, juego, dudas, preguntas frecuentes">
+
+  <!-- --- -->
   <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
   <!-- Estilo Custom -->
-  <link rel="stylesheet" href="../styles/style_1.css" />
+  <link rel="stylesheet" href="../styles/main.css" />
   <!-- Iconos -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
   <!-- AOS CSS-->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <title>League Of Legends</title>
+  <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
+  <!-- vid -->
+  <link href="/node_modules/vidbg.js/dist/vidbg.css" rel="stylesheet" type="text/css" />
+  <title>Soporte -League Of Legends-</title>
 </head>
 
 <body id="soporte">
-  <div class="background_1_soporte">
-    <div class="background_blur">
-      <header class="sticky-top bg-navbar">
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <article class="logo">
-              <a class="navbar-brand" href="#">
-                <img src="../img/logo.png" alt="Logo" width="70" />
-              </a>
-            </article>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar">
-              <i class="bi bi-list text-white icon_menu"></i>
-            </button>
-            <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <img src="../img/logo.png" alt="Logo" width="70" />
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav d-flex align-items-center justify-content-center">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./sobreNosotros.html">Sobre Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./personajes.html">Personajes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./noticias.html">Noticias</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./soporte.html">Soporte</a>
-                  </li>
-                </ul>
-                <div class="container-fluid footer-canvas">
-                  <section class="row">
-                    <article class="col-sm-12 d-flex align-items-center justify-content-evenly">
-                      <a href="https://www.youtube.com/c/LeagueofLegendsLATAM" target="_blank">
-                        <img src="../img/youtubeLogo.png" alt="youtube" id="youtube_icon" />
-                      </a>
-                      <a href="https://twitter.com/lol_es/" target="_blank">
-                        <img src="../img/twitterLogo.png" alt="twitter" id="twitter_icon" />
-                      </a>
-                      <a href="https://es-la.facebook.com/LeagueofLegendsLatino/" target="_blank">
-                        <img src="../img/facebookLogo.png" alt="facebook" id="facebook_icon" />
-                      </a>
-                      <a href="https://www.instagram.com/lol_es/" target="_blank">
-                        <img src="../img/instagramLogo.png" alt="instagram" id="instagram_icon" />
-                      </a>
-                      <a href="https://www.reddit.com/r/leagueoflegends/" target="_blank">
-                        <img src="../img/redditLogo.png" alt="reddit" id="reddit_icon" />
-                      </a>
-                    </article>
-                  </section>
-                </div>
-              </div>
+  <div class="contenedor_principal background_0_soporte">
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <article class="logo">
+          <a class="navbar-brand" href="#">
+            <img src="../img/logo.png" alt="Logo" width="70px" />
+          </a>
+        </article>
+        <button class="navbar-toggler icon_menu p-1" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <i class="bi bi-list text-white"></i>
+        </button>
+        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <img src="../img/logo.png" alt="Logo" width="70" />
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/sobreNosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/personajes.html">Personajes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/noticias.html">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/soporte.html">Soporte</a>
+              </li>
+            </ul>
+            <div class="container-fluid icons_social_menu">
+              <section class="row">
+                <article class="col-12 col-sm-12 footer-canvas">
+                  <a href="https://www.youtube.com/c/LeagueofLegendsLATAM" target="_blank">
+                    <img class="social_icons_sub" src="../img/youtubeLogo.png" alt="youtube" id="youtube_icon" />
+                  </a>
+                  <a href="https://twitter.com/lol_es/" target="_blank">
+                    <img class="social_icons_sub" src="../img/twitterLogo.png" alt="twitter" id="twitter_icon" />
+                  </a>
+                  <a href="https://es-la.facebook.com/LeagueofLegendsLatino/" target="_blank">
+                    <img class="social_icons_sub" src="../img/facebookLogo.png" alt="facebook" id="facebook_icon" />
+                  </a>
+                  <a href="https://www.instagram.com/lol_es/" target="_blank">
+                    <img class="social_icons_sub" src="../img/instagramLogo.png" alt="instagram" id="instagram_icon" />
+                  </a>
+                  <a href="https://www.reddit.com/r/leagueoflegends/" target="_blank">
+                    <img class="social_icons_sub" src="../img/redditLogo.png" alt="reddit" id="reddit_icon" />
+                  </a>
+                </article>
+              </section>
             </div>
           </div>
-        </nav>
-      </header>
-      <section class="container-fluid" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-        <article class="row m-0">
-          <div class="col-sm-12 col-lg-12 text-center">
-            <img class="img-fluid img_soporte" src="../img/soporte/tiposDeCampeones.png"
-              alt="tipos de campeones en league of legends" />
-          </div>
-        </article>
-      </section>
-    </div>
+        </div>
+      </nav>
+    </header>
+    <section class="container-fluid" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+      <article class="row m-0">
+        <div class="heigth_img col-12 col-sm-12 col-lg-12 d-flex align-items-center justify-content-center">
+          <img class="img-fluid img_soporte" src="../img/soporte/tiposDeCampeones.png"
+            alt="tipos de campeones en league of legends" />
+        </div>
+      </article>
+    </section>
   </div>
   <div class="background_2_soporte">
     <div class="background_blur">
@@ -112,20 +114,19 @@
               <div class="row">
                 <div class="col-sm-12 col-lg-12">
                   <section class="chat d-flex align-items-top justify-content-center">
-                    <i class="bi bi-chat-dots icon_soporte text-white" data-aos="zoom-in-up"
-                    data-aos-duration="1000" data-aos-easing="ease-in-out"></i>
+                    <i class="bi bi-chat-dots icon_chat" data-aos="zoom-in-up" data-aos-duration="1000"
+                      data-aos-easing="ease-in-out"></i>
                     <article class="d-flex align-items-center justify-content-center flex-column">
-                      <h2 class="titulo_secundario text-white" data-aos="zoom-in-up"
-                      data-aos-duration="1000" data-aos-easing="ease-in-out">CHAT</h2>
-                      <p class="parrafo_secundario text-white ms-3" data-aos="zoom-in-up"
-                      data-aos-duration="1000" data-aos-easing="ease-in-out">
+                      <h2 class="titulo_secundario text-white" data-aos="zoom-in-up" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">CHAT</h2>
+                      <p class="parrafo_secundario text-white ms-3" data-aos="zoom-in-up" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">
                         Contactanos por este medio donde un profesional resolvera
                         todas tus dudas e inquietudes. <br />
                       </p>
-                      <span class="span_contacto text-white ms-4" data-aos="zoom-in-up"
-                      data-aos-duration="1000" data-aos-easing="ease-in-out">Horarios de Atencion: 8:00 am - 20:00 pm</span>
-                      <div data-aos="zoom-in-up"
-                      data-aos-duration="1000" data-aos-easing="ease-in-out">
+                      <span class="span_contacto" data-aos="zoom-in-up" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">Horarios de Atencion: 8:00 am - 20:00 pm</span>
+                      <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
                         <a href="https://support-leagueoflegends.riotgames.com/hc/es-419" target="_blank">
                           <button class="btn_general mt-3 mb-3">
                             <span>Iniciar Chat</span><i></i>
@@ -139,27 +140,26 @@
               <div class="row">
                 <div class="col-sm-12 col-lg-12">
                   <section class="correo d-flex align-items-top justify-content-center">
-                    <i class="bi bi-envelope icon_soporte text-white" data-aos="zoom-in-up"
-                    data-aos-duration="1000" data-aos-easing="ease-in-out"></i>
+                    <i class="bi bi-envelope icon_correo" data-aos="zoom-in-up" data-aos-duration="1000"
+                      data-aos-easing="ease-in-out"></i>
                     <article class="d-flex align-items-center justify-content-center flex-column">
-                      <h2 class="titulo_secundario ms-2 text-white" data-aos="zoom-in-up"
-                      data-aos-duration="1000" data-aos-easing="ease-in-out">CORREO</h2>
-                      <p class="parrafo_secundario ms-2 text-white ms-3" data-aos="zoom-in-up"
-                      data-aos-duration="1000" data-aos-easing="ease-in-out">
+                      <h2 class="titulo_secundario ms-2 text-white" data-aos="zoom-in-up" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">CORREO</h2>
+                      <p class="parrafo_secundario ms-2 text-white ms-3" data-aos="zoom-in-up" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">
                         Contactanos por este medio donde un profesional resolvera
                         todas tus dudas e inquietudes. <br />
                       </p>
-                      <span class="span_contacto text-white ms-4" data-aos="zoom-in-up"
-                      data-aos-duration="1000" data-aos-easing="ease-in-out">Envia correo a: leagueoflegends@riot.com</span>
-                      <div data-aos="zoom-in-up"
-                      data-aos-duration="1000" data-aos-easing="ease-in-out">
+                      <span class="span_contacto text-white ms-4" data-aos="zoom-in-up" data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">Envia correo a: leagueoflegends@riot.com</span>
+                      <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
                         <a href="https://support-leagueoflegends.riotgames.com/hc/es-419" target="_blank">
                           <button class="btn_general mt-3 mb-3">
                             <span>Enviar Correo</span><i></i>
                           </button>
                         </a>
                       </div>
-                      </article>
+                    </article>
                   </section>
                 </div>
               </div>
@@ -168,19 +168,25 @@
           <div class="col-sm-5 col-lg-5">
             <section class="formulario">
               <article class="formulario_datos d-flex flex-column align-item-center justify-content-center">
-                <h2 class="titulo_secundario text-white mb-2" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">CONTACTANOS AQUI</h2>
+                <h2 class="titulo_secundario text-white mb-2" data-aos="zoom-in-up" data-aos-duration="1000"
+                  data-aos-easing="ease-in-out">CONTACTANOS AQUI...</h2>
                 <form action="" method="post">
-                  <div class="d-flex flex-column" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                  <div class="d-flex flex-column" data-aos="zoom-in-up" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
                     <input placeholder="Ingresa Tu Nombre" class="input me-3 ms-3" name="text" type="text" />
                   </div>
-                  <div class="d-flex flex-column mt-3" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                  <div class="d-flex flex-column mt-3" data-aos="zoom-in-up" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
                     <input placeholder="Ingresa Tu Correo" class="input me-3 ms-3" name="email" type="email">
                   </div>
-                  <div class="d-flex flex-column mt-3" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                  <div class="d-flex flex-column mt-3" data-aos="zoom-in-up" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
                     <input placeholder="Ingresa Tu Pais" class="input me-3 ms-3" name="text" type="text">
                   </div>
-                  <div class="d-flex flex-column mt-3" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                    <textarea placeholder="Ingresa Tu Comentario" class="input_textarea input me-3 ms-3" id="comentario" cols="28" rows="4"></textarea>
+                  <div class="d-flex flex-column mt-3" data-aos="zoom-in-up" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
+                    <textarea placeholder="Ingresa Tu Comentario" class="input_textarea input me-3 ms-3" id="comentario"
+                      cols="28" rows="4"></textarea>
                   </div>
                   <div class="d-flex align-item-center justify-content-center">
                     <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
@@ -204,52 +210,73 @@
           </div>
         </article>
       </section>
+      <footer class="container-fluid footer">
+        <section class="row pt-3">
+          <article class="col-12 col-sm-12 col-lg-5 footer_clasificacion">
+            <img src="../img/clasificacionDelJuego.png" alt="clasificación del juego" />
+            <p class="descripcion_derechos ms-2 pt-3">
+              Sangre <br />
+              Violencia de fantasía <br />
+              Temas insinuantes moderados <br />
+              Uso de alcohol y tabaco <br />
+              Interacciones en linea no clasificadas por la ESRB <br />
+            </p>
+          </article>
+          <article class="col-12 col-sm-12 col-lg-7 social">
+            <a class="ms-2 me-2" href="https://www.youtube.com/c/LeagueofLegendsLATAM" target="_blank">
+              <img class="social_icons" src="../img/youtubeLogo.png" alt="youtube" id="youtube_icon" />
+            </a>
+            <a class="ms-2 me-2" href="https://twitter.com/lol_es/" target="_blank">
+              <img class="social_icons" src="../img/twitterLogo.png" alt="twitter" id="twitter_icon" />
+            </a>
+            <a class="ms-2 me-2" href="https://es-la.facebook.com/LeagueofLegendsLatino/" target="_blank">
+              <img class="social_icons" src="../img/facebookLogo.png" alt="facebook" id="facebook_icon" />
+            </a>
+            <a class="ms-2 me-2" href="https://www.instagram.com/lol_es/" target="_blank">
+              <img class="social_icons" src="../img/instagramLogo.png" alt="instagram" id="instagram_icon" />
+            </a>
+            <a class="ms-2 me-2" href="https://www.reddit.com/r/leagueoflegends/" target="_blank">
+              <img class="social_icons" src="../img/redditLogo.png" alt="reddit" id="reddit_icon" />
+            </a>
+          </article>
+        </section>
+        <section class="row mt-3 derechos_content">
+          <article class="col-12 col-sm-12 col-lg-12">
+            <p>© 2022 Riot Games, Inc. Todos los derechos reservados.</p>
+          </article>
+        </section>
+      </footer>
     </div>
-    <footer class="container-fluid bg-blur">
-      <section class="row pt-2">
-        <article class="col-sm-12 col-lg-4 footer">
-          <img src="../img/clasificacionDelJuego.png" alt="clasificación del juego" />
-          <p class="descripcion_derechos ms-2 pt-3 text-dark">
-            Sangre <br />
-            Violencia de fantasía <br />
-            Temas insinuantes moderados <br />
-            Uso de alcohol y tabaco <br />
-            Interacciones en linea no clasificadas por la ESRB <br />
-          </p>
-        </article>
-        <article class="col-sm-12 col-lg-8 footer_redes">
-          <a class="ms-2 me-2" href="https://www.youtube.com/c/LeagueofLegendsLATAM" target="_blank">
-            <img src="../img/youtubeLogo.png" alt="youtube" id="youtube_icon" />
-          </a>
-          <a class="ms-2 me-2" href="https://twitter.com/lol_es/" target="_blank">
-            <img src="../img/twitterLogo.png" alt="twitter" id="twitter_icon" />
-          </a>
-          <a class="ms-2 me-2" href="https://es-la.facebook.com/LeagueofLegendsLatino/" target="_blank">
-            <img src="../img/facebookLogo.png" alt="facebook" id="facebook_icon" />
-          </a>
-          <a class="ms-2 me-2" href="https://www.instagram.com/lol_es/" target="_blank">
-            <img src="../img/instagramLogo.png" alt="instagram" id="instagram_icon" />
-          </a>
-          <a class="ms-2 me-2" href="https://www.reddit.com/r/leagueoflegends/" target="_blank">
-            <img src="../img/redditLogo.png" alt="reddit" id="reddit_icon" />
-          </a>
-        </article>
-      </section>
-      <section class="row mt-3">
-        <article class="col-sm-12 col-lg-12 footer_derechos">
-          <p class="derechos text-dark">© 2022 Riot Games, Inc. Todos los derechos reservados.</p>
-        </article>
-      </section>
-    </footer>
   </div>
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/node_modules/aos/dist/aos.js"></script>
+  <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Script Default -->
   <script src="../js/functions.js"></script>
+  <!-- vid -->
+  <script src="/node_modules/vidbg.js/dist/vidbg.js"></script>
+
+  <script>
+    var sobreNosotros = new vidbg(
+      ".background_0_soporte",
+      {
+        mp4: "https://assets.mixkit.co/videos/preview/mixkit-people-working-in-a-call-center-22987-large.mp4",
+        overlay: true,
+        overlayColor: "#000",
+        overlayAlpha: 0.7
+      },
+      {
+        autoplay: true,
+        controls: false,
+        loop: true,
+        muted: true,
+        playsInline: true,
+      }
+    );
+  </script>
 </body>
 
 </html>

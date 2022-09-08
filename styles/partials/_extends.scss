@@ -1,6 +1,6 @@
 // Variables //
 
-$background_color: rgba(0, 0, 0, 0.5);
+$background_color: rgba(0, 0, 0, 0.7);
 
 // --------- //
 
@@ -19,4 +19,21 @@ $background_color: rgba(0, 0, 0, 0.5);
 
 %social_icons {
     width: 32px;
+}
+
+%personaje {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 20px 0 20px 0;
+    margin: 0 0 20px 0;
+}
+
+%icon_soporte {
+    font-size: 30px;
+    color: rgb(255, 215, 0);
+    text-shadow: 0 0 7px rgb(255, 215, 0);
+    position: absolute;
+    left: 50px;
 }

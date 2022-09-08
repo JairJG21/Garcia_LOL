@@ -28,4 +28,13 @@
     .width_equipo {
         width: 25% !important;
     }
+
+    .content_historia {
+        @include display(
+                $direction: row,
+                $justify: center,
+                $align: center
+            );
+            flex-wrap: wrap;
+    }
 }
