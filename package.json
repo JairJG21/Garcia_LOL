@@ -20,6 +20,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "bootstrap": "^5.2.0",
+    "vidbg": "^0.1.0",
     "vidbg.js": "^2.1.0"
   }
 }
