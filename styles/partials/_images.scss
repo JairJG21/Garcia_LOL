@@ -24,12 +24,10 @@
 
 .icon_chat {
     @extend %icon_soporte;
-    top: 72px;
 }
 
 .icon_correo {
     @extend %icon_soporte;
-    top: 297px;
 }
 
 @media (min-width: 1024px) {
