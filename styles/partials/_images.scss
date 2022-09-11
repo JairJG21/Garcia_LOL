@@ -22,14 +22,6 @@
     border-radius: 80%;
 }
 
-.icon_chat {
-    @extend %icon_soporte;
-}
-
-.icon_correo {
-    @extend %icon_soporte;
-}
-
 @media (min-width: 1024px) {
     
     .img_equipo {
