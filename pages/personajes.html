@@ -1,193 +1,331 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
-    <!-- Estilo -->
-    <link rel="stylesheet" href="../styles/style.css">
-    <!-- Iconos -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO -->
+
+  <meta name="description" content="Campeones de League Of Legends">
+  <meta name="keywords" content="League Of Legends, campeones, jugadores, personajes">
+
+  <!-- --- -->
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+  <!-- Estilo Custom -->
+  <link rel="stylesheet" href="../styles/main.css" />
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
   <!-- AOS CSS-->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <title>League Of Legends</title>
-  </head>
-  <body id="personajes">
-    <div class="background_1_personajes">
-      <div class="background_blur">
-        <header class="encabezado">
-          <img src="../img/logo.png" alt="Logo" class="logo" />
-          <nav class="navbar">
-            <a href="javascript:abrirMenu()">
-              <i class="bi bi-list btn_menu"></i>
-            </a>
-            <ul class="menu">
-              <a class="btn_cerrar_menu" href="javascript:cerrarMenu()"><i class="bi bi-x"></i></a>
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="../pages/sobreNosotros.html">Sobre Nosotros</a></li>
-              <li><a href="../pages/personajes.html">Personajes</a></li>
-              <li><a href="../pages/noticias.html">Noticias</a></li>
-              <li><a href="../pages/soporte.html">Soporte</a></li>
+  <link rel="stylesheet" href="../libraries/aos-master/dist/aos.css">
+  <!-- vid -->
+  <link href="../libraries/vidbg/dist/vidbg.css" rel="stylesheet" type="text/css" />
+  <title>Campeones de League Of Legends</title>
+</head>
+
+<body id="personajes">
+  <div class="contenedor_principal background_0_personajes">
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <article class="logo">
+          <a class="navbar-brand" href="#">
+            <img src="../img/logo.png" alt="Logo" width="70px" />
+          </a>
+        </article>
+        <button class="navbar-toggler icon_menu p-1" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <i class="bi bi-list text-white"></i>
+        </button>
+        <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <img src="../img/logo.png" alt="Logo" width="70" />
+            <button type="button" class="btn-close me-1" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/sobreNosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/personajes.html">Personajes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/noticias.html">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/soporte.html">Soporte</a>
+              </li>
             </ul>
-          </nav>
-        </header>
-        <section class="imagen_principal" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-          <article class="img">
-            <img class="img_personajes" src="../img/personajes/personajes.png" alt="personajes de league of legends" />
-          </article>
-        </section>
-      </div>
-    </div>
-    <div class="background_2_personajes">
-      <div class="background_blur">
-        <section class="principal_personajes" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-          <article class="titulo_personajes">
-            <h1 class="titulo_principal">CAMPEONES</h1>
-            <hr class="divisor" />
-            <p class="parrafo_personajes">
+            <div class="container-fluid icons_social_menu">
+              <section class="row">
+                <article class="col-12 col-sm-12 footer-canvas">
+                  <a href="https://www.youtube.com/c/LeagueofLegendsLATAM" target="_blank">
+                    <img class="social_icons_sub" src="../img/youtubeLogo.png" alt="youtube" id="youtube_icon" />
+                  </a>
+                  <a href="https://twitter.com/lol_es/" target="_blank">
+                    <img class="social_icons_sub" src="../img/twitterLogo.png" alt="twitter" id="twitter_icon" />
+                  </a>
+                  <a href="https://es-la.facebook.com/LeagueofLegendsLatino/" target="_blank">
+                    <img class="social_icons_sub" src="../img/facebookLogo.png" alt="facebook" id="facebook_icon" />
+                  </a>
+                  <a href="https://www.instagram.com/lol_es/" target="_blank">
+                    <img class="social_icons_sub" src="../img/instagramLogo.png" alt="instagram" id="instagram_icon" />
+                  </a>
+                  <a href="https://www.reddit.com/r/leagueoflegends/" target="_blank">
+                    <img class="social_icons_sub" src="../img/redditLogo.png" alt="reddit" id="reddit_icon" />
+                  </a>
+                </article>
+              </section>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="container-fluid" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+      <article class="row">
+        <div class="heigth_img col-12 col-sm-12 col-lg-12 d-flex align-items-center justify-content-center">
+          <img class="img-fluid img_personajes" src="../img/personajes/personajes.png"
+            alt="personajes de league of legends" />
+        </div>
+      </article>
+    </section>
+  </div>
+  <div class="background_2_personajes">
+    <div class="background_blur">
+      <section class="container-fluid">
+        <article class="row text-center">
+          <div class="col-sm-12 col-lg-12 mt-2">
+            <h1 class="titulo_secundario text-white" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+            data-aos-duration="1000" data-aos-easing="ease-in-out">CAMPEONES</h1>
+            <hr class="border rounded mt-1 order-1 opacity-100" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+            data-aos-duration="1000" data-aos-easing="ease-in-out" />
+            <p class="parrafo_principal mb-2" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+            data-aos-duration="1000" data-aos-easing="ease-in-out">
               Con más de 140 campeones, encontrarás el que se ajuste perfectamente a
-              tu estilo de juego. <br /> Domina a uno o domínalos a todos.
+              tu estilo de juego. Domina a uno o domínalos a todos.
             </p>
-          </article>
-        </section>
-        <section class="personajes_main">
-          <section class="personajes_detalle">
-            <article class="personaje_1" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          </div>
+        </article>
+      </section>
+      <section class="container-fluid">
+        <article class="row personajes_content">
+          <div class="col-sm-12 col-lg-4">
+            <article class="personaje_1" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+            data-aos-duration="1000" data-aos-easing="ease-in-out">
               <div class="personaje_blur_back">
-                <span>ABRAZO DE LA AGONÍA</span>
-                <h2>EVELYN</h2>
-                <p>
+                <span class="span_personajes">ABRAZO DE LA AGONÍA</span>
+                <h2 class="titulo_secundario">EVELYN</h2>
+                <p class="parrafo_secundario">
                   Dentro de las oscuras vetas de Runaterra, la demonio Evelynn acecha a
                   su siguiente víctima. Seduce a su presa con la apariencia voluptuosa
                   de una mujer humana, pero una vez que alguien sucumbe ante sus
                   encantos, Evelynn revela su verdadera forma.
                 </p>
-                <article>
-                  <a class="link_personaje" target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/evelynn/">Mas Información <i class="bi bi-chevron-double-right icon_personaje"></i></a>
-                </article>
+                <div class="d-flex align-item-center justify-content-center">
+                  <a href="https://www.leagueoflegends.com/es-mx/champions/evelynn/" target="_blank">
+                    <button class="btn_general">
+                      <span>Mas Información</span><i></i>
+                    </button>
+                  </a>
+                </div>
               </div>
             </article>
-            <article class="personaje_2" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <article class="personaje_2" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+            data-aos-duration="1000" data-aos-easing="ease-in-out">
               <div class="personaje_blur_back">
-                <span>EL GRAN GÓLEM DE VAPOR</span>
-                <h2>BLITZCRANK</h2>
-                <p>
+                <span class="span_personajes text-white">EL GRAN GÓLEM DE VAPOR</span>
+                <h2 class="titulo_secundario text-white">BLITZCRANK</h2>
+                <p class="parrafo_secundario text-white text-center">
                   Blitzcrank es un autómata gigantesco y casi indestructible de Zaun,
                   que originalmente fue creado para deshacerse de los desechos tóxicos.
                   Sin embargo, él cree que su propósito principal era demasiado
                   limitado, así que modificó su propia forma para poder servir mejor.
                 </p>
-                <article>
-                  <a class="link_personaje" target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/blitzcrank/">Mas Información <i class="bi bi-chevron-double-right icon_personaje"></i></a>
-                </article>
+                <div class="d-flex align-item-center justify-content-center">
+                  <a href="https://www.leagueoflegends.com/es-mx/champions/blitzcrank/" target="_blank">
+                    <button class="btn_general">
+                      <span>Mas Información</span><i></i>
+                    </button>
+                  </a>
+                </div>
               </div>
             </article>
-            <article class="personaje_3" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <article class="personaje_3" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+            data-aos-duration="1000" data-aos-easing="ease-in-out">
               <div class="personaje_blur_back">
-                <span>EL VENERABLE INVENTOR</span>
-                <h2>HEIMERDINGER</h2>
-                <p>
+                <span class="span_personajes text-white">EL VENERABLE INVENTOR</span>
+                <h2 class="titulo_secundario text-white">HEIMERDINGER</h2>
+                <p class="parrafo_secundario text-white text-center">
                   El Profesor Cecil B. Heimerdinger, brillante y a veces excéntrico
                   científico yordle, es uno de los inventores más innovadores que
                   Piltóver ha conocido. Implacable en su trabajo hasta llegar a niveles
                   de neurótica obsesión, se alegra en poder contestar las preguntas.
                 </p>
-                <article>
-                  <a class="link_personaje" target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/heimerdinger/">Mas Información <i class="bi bi-chevron-double-right icon_personaje"></i></a>
-                </article>
+                <div class="d-flex align-item-center justify-content-center">
+                  <a href="https://www.leagueoflegends.com/es-mx/champions/heimerdinger/" target="_blank">
+                    <button class="btn_general">
+                      <span>Mas Información</span><i></i>
+                    </button>
+                  </a>
+                </div>
               </div>
             </article>
-            <article class="personaje_4" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <article class="personaje_4" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+            data-aos-duration="1000" data-aos-easing="ease-in-out">
               <div class="personaje_blur_back">
-                <span>LA RATA MUTANTE</span>
-                <h2>TWITCH</h2>
-                <p>
-                    Una rata zaunita de nacimiento, pero conocedor de la más 
-                    fina suciedad por pasión. Twitch no tiene miedo de 
-                    ensuciarse las patas. Apunta una ballesta potenciada con 
-                    químicos hacia el centro de Piltóver y jura mostrarles a los 
-                    que habitan arriba.
+                <span class="span_personajes text-white">LA RATA MUTANTE</span>
+                <h2 class="titulo_secundario text-white">TWITCH</h2>
+                <p class="parrafo_secundario text-white text-center">
+                  Una rata zaunita de nacimiento, pero conocedor de la más
+                  fina suciedad por pasión. Twitch no tiene miedo de
+                  ensuciarse las patas. Apunta una ballesta potenciada con
+                  químicos hacia el centro de Piltóver y jura mostrarles a los
+                  que habitan arriba.
                 </p>
-                <article>
-                  <a class="link_personaje" target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/twitch/">Mas Información <i class="bi bi-chevron-double-right icon_personaje"></i></a>
-                </article>
+                <div class="d-flex align-item-center justify-content-center">
+                  <a href="https://www.leagueoflegends.com/es-mx/champions/twitch/" target="_blank">
+                    <button class="btn_general">
+                      <span>Mas Información</span><i></i>
+                    </button>
+                  </a>
+                </div>
               </div>
             </article>
-            <article class="personaje_5" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <article class="personaje_5" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+            data-aos-duration="1000" data-aos-easing="ease-in-out">
               <div class="personaje_blur_back">
-                <span>LA CAMALEÓN CURIOSA</span>
-                <h2>NEEKO</h2>
-                <p>
-                    Proveniente de una tribu vastaya perdida desde hace mucho 
-                    tiempo, Neeko puede mezclarse en cualquier multitud 
-                    adoptando la apariencia de los demás e incluso absorber un 
-                    poco de su estado emocional para distinguir a un amigo de 
-                    un enemigo tan grande.
+                <span class="span_personajes text-white">LA CAMALEÓN CURIOSA</span>
+                <h2 class="titulo_secundario text-white">NEEKO</h2>
+                <p class="parrafo_secundario text-white text-center">
+                  Proveniente de una tribu vastaya perdida desde hace mucho
+                  tiempo, Neeko puede mezclarse en cualquier multitud
+                  adoptando la apariencia de los demás e incluso absorber un
+                  poco de su estado emocional para distinguir a un amigo de
+                  un enemigo tan grande.
                 </p>
-                <article>
-                  <a class="link_personaje" target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/neeko/">Mas Información <i class="bi bi-chevron-double-right icon_personaje"></i></a>
-                </article>
+                <div class="d-flex align-item-center justify-content-center">
+                  <a href="https://www.leagueoflegends.com/es-mx/champions/neeko/" target="_blank">
+                    <button class="btn_general">
+                      <span>Mas Información</span><i></i>
+                    </button>
+                  </a>
+                </div>
               </div>
             </article>
-            <article class="personaje_6" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <article class="personaje_6" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+            data-aos-duration="1000" data-aos-easing="ease-in-out">
               <div class="personaje_blur_back">
-                <span>EL REY DEL RÍO</span>
-                <h2>TAHM KENCH</h2>
-                <p>
-                    Conocido por muchos nombres a lo largo de la historia, el 
-                    demonio Tahm Kench viaja a través de las aguas de 
-                    Runaterra mientras alimenta su insaciable apetito con la 
-                    miseria de otros. Aunque pudiera parecer particularmente 
-                    encantador y orgulloso es malvado.
+                <span class="span_personajes text-white">EL REY DEL RÍO</span>
+                <h2 class="titulo_secundario text-white">TAHM KENCH</h2>
+                <p class="parrafo_secundario text-white text-center">
+                  Conocido por muchos nombres a lo largo de la historia, el
+                  demonio Tahm Kench viaja a través de las aguas de
+                  Runaterra mientras alimenta su insaciable apetito con la
+                  miseria de otros. Aunque pudiera parecer particularmente
+                  encantador y orgulloso.
                 </p>
-                <article>
-                  <a class="link_personaje" target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/tahm-kench/">Mas Información <i class="bi bi-chevron-double-right icon_personaje"></i></a>
-                </article>
+                <div class="d-flex align-item-center justify-content-center">
+                  <a href="https://www.leagueoflegends.com/es-mx/champions/tahm-kench/" target="_blank">
+                    <button class="btn_general">
+                      <span>Mas Información</span><i></i>
+                    </button>
+                  </a>
+                </div>
               </div>
             </article>
-          </section>
+          </div>
+        </article>
+      </section>
+      <article class="d-flex align-item-center justify-content-center" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50"
+      data-aos-duration="1000" data-aos-easing="ease-in-out">
+        <a href="https://www.leagueoflegends.com/es-mx/champions/" target="_blank">
+          <button class="btn_general mt-4 mb-4">
+            <span>Mas Campeones</span><i></i>
+          </button>
+        </a>
+      </article>
+      <footer class="container-fluid footer">
+        <section class="row pt-3">
+          <article class="col-12 col-sm-12 col-lg-5 footer_clasificacion">
+            <img src="../img/clasificacionDelJuego.png" alt="clasificación del juego" />
+            <p class="descripcion_derechos ms-2 pt-3">
+              Sangre <br />
+              Violencia de fantasía <br />
+              Temas insinuantes moderados <br />
+              Uso de alcohol y tabaco <br />
+              Interacciones en linea no clasificadas por la ESRB <br />
+            </p>
+          </article>
+          <article class="col-12 col-sm-12 col-lg-7 social">
+            <a class="ms-2 me-2" href="https://www.youtube.com/c/LeagueofLegendsLATAM" target="_blank">
+              <img class="social_icons" src="../img/youtubeLogo.png" alt="youtube" id="youtube_icon" />
+            </a>
+            <a class="ms-2 me-2" href="https://twitter.com/lol_es/" target="_blank">
+              <img class="social_icons" src="../img/twitterLogo.png" alt="twitter" id="twitter_icon" />
+            </a>
+            <a class="ms-2 me-2" href="https://es-la.facebook.com/LeagueofLegendsLatino/" target="_blank">
+              <img class="social_icons" src="../img/facebookLogo.png" alt="facebook" id="facebook_icon" />
+            </a>
+            <a class="ms-2 me-2" href="https://www.instagram.com/lol_es/" target="_blank">
+              <img class="social_icons" src="../img/instagramLogo.png" alt="instagram" id="instagram_icon" />
+            </a>
+            <a class="ms-2 me-2" href="https://www.reddit.com/r/leagueoflegends/" target="_blank">
+              <img class="social_icons" src="../img/redditLogo.png" alt="reddit" id="reddit_icon" />
+            </a>
+          </article>
         </section>
-          <section class="mas_campeones" data-aos="zoom-in-up">
-            <a class="link_campeones" target="_blank" href="https://www.leagueoflegends.com/es-mx/champions/">Mas Campeones <i class="bi bi-chevron-double-right icon_personaje"></i></a>
-          </section>
-          <footer class="footer">
-            <article class="footer_texto">
-              <img src="../img/clasificacionDelJuego.png" alt="clasificación del juego" />
-              <p>
-                Sangre <br />
-                Violencia de fantasía <br />
-                Temas insinuantes moderados <br />
-                Uso de alcohol y tabaco <br />
-                Interacciones en linea no clasificadas por la ESRB <br />
-              </p>
-            </article>
-            <article class="footer_redes">
-              <a href="https://www.youtube.com/c/LeagueofLegendsLATAM" target="_blank">
-                <img src="../img/youtubeLogo.png" alt="youtube" id="youtube_icon" />
-              </a>
-              <a href="https://twitter.com/lol_es/" target="_blank">
-                <img src="../img/twitterLogo.png" alt="twitter" id="twitter_icon" />
-              </a>
-              <a href="https://es-la.facebook.com/LeagueofLegendsLatino/" target="_blank">
-                <img src="../img/facebookLogo.png" alt="facebook" id="facebook_icon" />
-              </a>
-              <a href="https://www.instagram.com/lol_es/" target="_blank">
-                <img src="../img/instagramLogo.png" alt="instagram" id="instagram_icon" />
-              </a>
-              <a href="https://www.reddit.com/r/leagueoflegends/" target="_blank">
-                <img src="../img/redditLogo.png" alt="reddit" id="reddit_icon" />
-              </a>
-            </article>
-            <article class="footer_derechos">
-              <p>© 2022 Riot Games, Inc. Todos los derechos reservados.</p>
-            </article>
-          </footer>
-      </div>
+        <section class="row mt-3 derechos_content">
+          <article class="col-12 col-sm-12 col-lg-12">
+            <p>© 2022 Riot Games, Inc. Todos los derechos reservados.</p>
+          </article>
+        </section>
+      </footer>
     </div>
-      <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="../libraries/bootstrap-5.2.1/dist/js/bootstrap.min.js"></script>
+  <!-- AOS JS -->
+  <script src="../libraries/aos-master/dist/aos.js"></script>
+  <!-- Jquery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Script Default -->
   <script src="../js/functions.js"></script>
-  </body>
+  <!-- vid -->
+  <script src="../libraries/vidbg/dist/vidbg.js"></script>
+
+  <script>
+    var personajes = new vidbg(
+      ".background_0_personajes",
+      {
+        mp4: "https://assets.mixkit.co/videos/preview/mixkit-several-gamers-playing-on-computers-43541-large.mp4",
+        overlay: true,
+        overlayColor: "#000",
+        overlayAlpha: 0.7
+      },
+      {
+        autoplay: true,
+        controls: false,
+        loop: true,
+        muted: true,
+        playsInline: true,
+      }
+    );
+  </script>
+</body>
+
 </html>

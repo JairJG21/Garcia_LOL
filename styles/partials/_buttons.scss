@@ -1,0 +1,18 @@
+.btn_general {
+    @include btn_general(
+        $padding_Y: 1rem, 
+        $padding_X: 1.5rem, 
+        $sizeFont: 13px
+    );
+    margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+    .btn_general {
+        @include btn_general(
+            $padding_Y: 1rem, 
+            $padding_X: 1.5rem, 
+            $sizeFont: 15px
+        );
+    }   
+}

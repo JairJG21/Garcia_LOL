@@ -1,0 +1,74 @@
+.img_equipo {
+    width: 80%;
+    margin: 0 0 1em 0;
+}
+
+.img_descripcion {
+    border-radius: 20px;
+    width: 80%;
+}
+
+.img_valores {
+    border-radius: 100%;
+    width: 50%;
+}
+
+.img_noticias_principal {
+    width: 80%;
+}
+
+.img_noticias {
+    width: 50%;
+    border-radius: 80%;
+}
+
+.icon_ {
+    color: white;
+    font-size: 30px;
+}
+
+@media (min-width: 1024px) {
+    
+    .img_equipo {
+        width: 70% !important;
+        &:hover {
+            filter: brightness(2);
+        }
+    }
+
+    .img_descripcion {
+        width: 70%;
+        margin: 15px 0 0 0;
+    }
+
+    .img_sobreNosotros {
+        width: 80%;
+    }
+
+    .valores {
+        width: 25%;
+    }
+
+    .img_valores {
+        width: 80%;
+    }
+
+    .img_noticias_principal {
+        width: 60%;
+    }
+
+    .img_noticias {
+        width: 30%;
+        border-radius: 10px 50px;
+    }
+
+    .icon_chat {
+        top: 80px;
+        left: 200px;
+    }
+    
+    .icon_correo {
+        top: 275px;
+        left: 200px;
+    }
+}

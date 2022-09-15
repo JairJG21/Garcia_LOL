@@ -1,0 +1,70 @@
+.social_icons {
+    @extend %social_icons;
+}
+
+.footer_clasificacion {
+    @include display (
+        $direction: row,
+        $justify: center,
+        $align: center
+    );
+
+}
+
+.descripcion_derechos {
+    @include texto (
+        $font: bluetea,
+        $size: 12px,
+        $color: rgb(255,255,255),
+        $align: start
+    );
+}
+
+.social {
+    @include display (
+        $direction: row,
+        $justify: center,
+        $align: center
+    );
+}
+
+.derechos_content {
+    @include texto (
+        $font: bluetea,
+        $size: 13px,
+        $color: rgb(255,255,255),
+        $align: center
+    );
+}
+
+.footer {
+    background-color: map-get($style_background, background_blur );
+}
+
+@media (min-width: 1024px) {
+    .social {
+        @include display (
+            $direction: row,
+            $justify: end,
+            $align: center
+        );
+    }
+
+    .footer_clasificacion {
+        @include display (
+            $direction: row,
+            $justify: start,
+            $align: center
+        );
+    
+    }
+
+    .derechos_content {
+        @include texto (
+            $font: bluetea,
+            $size: 15px,
+            $color: rgb(255,255,255),
+            $align: start
+        );
+    }
+}

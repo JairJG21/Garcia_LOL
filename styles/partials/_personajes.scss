@@ -1,0 +1,43 @@
+.personajes_content {
+    margin: 0 10px 0 10px;
+}
+
+.personaje_blur_back {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 15px 10px 15px;
+    border-radius: 20px 0 20px 0;
+    transition: all 0.2s linear;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+.personaje_1 {
+    background-image: url(../img/personajes/Evelynn.jpg);
+    @extend %personaje;
+}
+
+.personaje_2 {
+    background-image: url(../img/personajes/Blitzcrank.jpg);
+    @extend %personaje;
+}
+
+.personaje_3 {
+    background-image: url(../img/personajes/Heimerdinger.jpg);
+    @extend %personaje;
+}
+
+.personaje_4 {
+    background-image: url(../img/personajes/Twitch.jpg);
+    @extend %personaje;
+}
+
+.personaje_5 {
+    background-image: url(../img/personajes/Neeko.jpg);
+    @extend %personaje;
+}
+
+.personaje_6 {
+    background-image: url(../img/personajes/TahmKench.jpg);
+    @extend %personaje;
+}
