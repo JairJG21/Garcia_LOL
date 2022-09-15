@@ -10,7 +10,7 @@
 
 .img_valores {
     border-radius: 100%;
-    width: 70%;
+    width: 50%;
 }
 
 .img_noticias_principal {
@@ -18,14 +18,22 @@
 }
 
 .img_noticias {
-    width: 70%;
+    width: 50%;
     border-radius: 80%;
+}
+
+.icon_ {
+    color: white;
+    font-size: 30px;
 }
 
 @media (min-width: 1024px) {
     
     .img_equipo {
         width: 70% !important;
+        &:hover {
+            filter: brightness(2);
+        }
     }
 
     .img_descripcion {

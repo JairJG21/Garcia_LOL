@@ -1,5 +1,6 @@
 $(document).ready(function () {
   AOS.init();
+  emailjs.init('qhBUjZCwmvp6NtQD7');
 
   reacomodarVideo();
 
@@ -18,3 +19,15 @@ function reacomodarVideo() {
   console.log(height_total);
   $('.heigth_img').height(height_img);
 }
+
+$('frmContacto').submit(function (e) { 
+  e.preventDefault();
+
+  emailjs.sendForm('service_lol', 'frmContacto', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+
+});

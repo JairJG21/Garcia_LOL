@@ -10778,7 +10778,7 @@ textarea.form-control-lg {
 }
 
 .btn-close {
-  background: transparent url(../img/icon_btn_close.svg) center/1em auto no-repeat;
+  background: transparent url(../img/icon_btn_close.svg) center/1.5rem auto no-repeat;
 }
 
 .header {
@@ -10844,7 +10844,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
   }
   .nav-link {
     font-size: 20px;
-    margin: 0;
+    margin: 0 15px 0 0;
   }
   .footer-canvas {
     display: none;
@@ -10857,12 +10857,11 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    margin: 0 30px 0 0;
+    margin: 0 50px 0 0;
   }
 }
 .background_1_index {
   background-image: url(../img/background/background_1_index.jpg);
-  margin: 52px 0 0 0;
 }
 
 .background_2_index {
@@ -10944,7 +10943,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
   font-size: 32px;
   color: rgb(255, 255, 255);
   text-align: center;
-  margin-bottom: 0 !important;
+  margin-bottom: 10px !important;
 }
 
 .titulo_secundario {
@@ -10952,6 +10951,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
   font-size: 30px;
   color: rgb(255, 255, 255);
   text-align: center;
+  margin: 5px;
 }
 
 .titulo_terciario {
@@ -11073,8 +11073,8 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 }
 .btn_general {
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  padding: 1em 1.5em;
+  letter-spacing: 0.5rem;
+  padding: 1rem 1.5rem;
   transition: 0.2s;
   position: relative;
   font-size: 13px;
@@ -11082,7 +11082,8 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
   border: none;
   color: #fff;
   font-family: fronte_script;
-  margin: 1em;
+  margin: 0.5rem;
+  margin-bottom: 20px;
 }
 .btn_general:hover {
   background: #F3BE22;
@@ -11140,8 +11141,8 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 @media (min-width: 1024px) {
   .btn_general {
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding: 1em 1.5em;
+    letter-spacing: 0.5rem;
+    padding: 1rem 1.5rem;
     transition: 0.2s;
     position: relative;
     font-size: 15px;
@@ -11149,7 +11150,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
     border: none;
     color: #fff;
     font-family: fronte_script;
-    margin: 1em;
+    margin: 0.5rem;
   }
   .btn_general:hover {
     background: #F3BE22;
@@ -11227,6 +11228,20 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
   margin: 1em 0 1em 0;
 }
 
+.contenedor_presentacion_index {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contenedor_equipos_index {
+  padding-top: 10px;
+}
+
+.contenedor_historia_sobreNosotros {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
 @media (min-width: 1024px) {
   .width_equipo {
     width: 25% !important;
@@ -11264,7 +11279,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 
 .img_valores {
   border-radius: 100%;
-  width: 70%;
+  width: 50%;
 }
 
 .img_noticias_principal {
@@ -11272,13 +11287,21 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 }
 
 .img_noticias {
-  width: 70%;
+  width: 50%;
   border-radius: 80%;
+}
+
+.icon_ {
+  color: white;
+  font-size: 30px;
 }
 
 @media (min-width: 1024px) {
   .img_equipo {
     width: 70% !important;
+  }
+  .img_equipo:hover {
+    filter: brightness(2);
   }
   .img_descripcion {
     width: 70%;
@@ -11376,6 +11399,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 }
 
 body, html {
+  font-size: 10px;
   height: 100%;
 }
 

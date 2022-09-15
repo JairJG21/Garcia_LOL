@@ -7,7 +7,7 @@ $white_color: rgb(255, 255, 255);
         $color: $white_color,
         $align: center
     );
-    margin-bottom: 0 !important;
+    margin-bottom: 10px !important;
 }
 
 .titulo_secundario {
@@ -17,6 +17,7 @@ $white_color: rgb(255, 255, 255);
         $color: $white_color,
         $align: center
     );
+    margin: 5px;
 }
 
 .titulo_terciario {

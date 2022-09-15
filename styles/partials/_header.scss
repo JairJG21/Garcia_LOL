@@ -11,7 +11,7 @@
 }
 
 .btn-close {
-    background: transparent url(../img/icon_btn_close.svg) center/1em auto no-repeat;
+    background: transparent url(../img/icon_btn_close.svg) center/1.5rem auto no-repeat;
 }
 
 .header {
@@ -55,7 +55,7 @@
     letter-spacing: 4px;
         &:hover {
             text-shadow: #CCC 0 0 10px;
-            color: rgb(255, 215, 0);        
+            color: rgb(255, 215, 0);      
         }
 }
 
@@ -81,7 +81,7 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
 
     .nav-link {
         font-size: 20px;
-        margin: 0;
+        margin: 0 15px 0 0;
     }
 
     .footer-canvas {
@@ -98,6 +98,6 @@ body#soporte ul.navbar-nav li:nth-child(5) a {
             $justify: end,
             $align: center
         );
-        margin: 0 30px 0 0;
+        margin: 0 50px 0 0;
     }
 }

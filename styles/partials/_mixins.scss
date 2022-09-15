@@ -14,7 +14,7 @@
 
 @mixin btn_general($padding_Y, $padding_X, $sizeFont) {
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.5rem;
     padding: $padding_Y $padding_X;
     transition: 0.2s;
     position: relative;
@@ -23,7 +23,7 @@
     border: none;
     color: #fff;
     font-family: fronte_script;
-    margin: 1em;
+    margin: 0.5rem;
         &:hover {
             background: #F3BE22;
             color: #F3BE22;
