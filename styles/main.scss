@@ -1,0 +1,29 @@
+@import 
+    // "../libraries/bootstrap-5.2.1/scss/bootstrap", 
+    "../node_modules/bootstrap/scss/bootstrap", 
+    "../styles/partials/mixins",
+    "../styles/partials/header",
+    "../styles/partials/backgrounds",
+    "../styles/partials/extends",
+    "../styles/partials/fonts",
+    "../styles/partials/text",
+    "../styles/partials/footer",
+    "../styles/partials/buttons",
+    "../styles/partials/maps",
+    "../styles/partials/displays",
+    "../styles/partials/carousel",
+    "../styles/partials/images",
+    "../styles/partials/personajes",
+    "../styles/partials/soporte";
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body, html {
+        font-size: 10px;
+        height: 100%;
+    }
+
+    

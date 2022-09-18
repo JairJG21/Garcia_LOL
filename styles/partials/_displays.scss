@@ -1,0 +1,54 @@
+.d-center {
+    @include display(
+        $direction: column, 
+        $justify: center, 
+        $align: center
+    );
+}
+
+.d-equipos {
+    @include display(
+        $direction: row,
+        $justify: center,
+        $align: center
+    );
+    flex-wrap: wrap;
+        .width_equipo {
+            @include display(
+                $direction: column,
+                $justify: center,
+                $align: center
+            );
+            width: 50%;
+            margin: 1em 0 1em 0;
+        }
+}
+
+.contenedor_presentacion_index {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contenedor_equipos_index {
+    padding-top: 10px;
+}
+
+.contenedor_historia_sobreNosotros {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+    .width_equipo {
+        width: 25% !important;
+    }
+
+    .content_historia {
+        @include display(
+                $direction: row,
+                $justify: center,
+                $align: center
+            );
+            flex-wrap: wrap;
+    }
+}
