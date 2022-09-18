@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bl4ck-00/Garcia_LOL/issues"
   },
-  "homepage": "https://github.com/bl4ck-00/Garcia_LOL#readme"
+  "homepage": "https://github.com/bl4ck-00/Garcia_LOL#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.1"
+  }
 }
