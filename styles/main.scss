@@ -1,19 +1,19 @@
 @import 
     "../libraries/bootstrap-5.2.1/scss/bootstrap", 
-    "../styles/partials/mixins",
-    "../styles/partials/header",
-    "../styles/partials/backgrounds",
-    "../styles/partials/extends",
-    "../styles/partials/fonts",
-    "../styles/partials/text",
-    "../styles/partials/footer",
-    "../styles/partials/buttons",
-    "../styles/partials/maps",
-    "../styles/partials/displays",
-    "../styles/partials/carousel",
-    "../styles/partials/images",
-    "../styles/partials/personajes",
-    "../styles/partials/soporte";
+    "./partials/mixins",
+    "./partials/header",
+    "./partials/backgrounds",
+    "./partials/extends",
+    "./partials/fonts",
+    "./partials/text",
+    "./partials/footer",
+    "./partials/buttons",
+    "./partials/maps",
+    "./partials/displays",
+    "./partials/carousel",
+    "./partials/images",
+    "./partials/personajes",
+    "./partials/soporte";
 
     * {
         margin: 0;
