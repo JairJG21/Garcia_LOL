@@ -1,7 +1,6 @@
 {
   "name": "webdelol---garcia",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +17,7 @@
   "homepage": "https://github.com/bl4ck-00/Garcia_LOL#readme",
   "dependencies": {
     "bootstrap": "^5.2.1"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
